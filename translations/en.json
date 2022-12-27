@@ -15,6 +15,7 @@
     "item-game-mod": "Game Mod",
 
     "freelance-work-desc": "No source code available for this project as it has been done as freelance work.",
+    "personal-work-desc": "No source code available for this project as it has been done for personal purposes.",
     "view-btn": "View",
 
     "crypto-coin-tracker-title": "Crypto Coin Tracker",
@@ -106,5 +107,8 @@
     "project-zomboid-mod-desc": "A mod I created using <b>Lua</b> for <b>Project Zomboid</b> game.",
 
     "twitter-tracker-panel-title": "Twitter Tracking Panel",
-    "twitter-tracker-panel-desc": "In this project, I did write a script to track the Twitter accounts assigned to the users and created a web panel that displays all the details using <b>PHP</b>, <b>HTML</b>, <b>CSS</b> and <b>Javascript</b>. The tracking script is written in <b>Python</b>. To fetch the Twitter accounts and their tweet details, the Twitter API has been used. Based on the gathered data, some statistical graphs are drawn across the detail pages. This panel also includes advanced searching, which can detect passive accounts and search for words in tweets, among other things. Furthermore, this system has a feature that allows users to be grouped, which allows for statistical analysis of groups such as group activity, etc."
+    "twitter-tracker-panel-desc": "In this project, I did write a script to track the Twitter accounts assigned to the users and created a web panel that displays all the details using <b>PHP</b>, <b>HTML</b>, <b>CSS</b> and <b>Javascript</b>. The tracking script is written in <b>Python</b>. To fetch the Twitter accounts and their tweet details, the Twitter API has been used. Based on the gathered data, some statistical graphs are drawn across the detail pages. This panel also includes advanced searching, which can detect passive accounts and search for words in tweets, among other things. Furthermore, this system has a feature that allows users to be grouped, which allows for statistical analysis of groups such as group activity, etc.",
+
+    "license-generator-title": "License Generator",
+    "license-generator-desc": "An application developed using <b>Tauri</b> and <b>React</b> for generating valid license files for my own applications with <b>Rust</b> programming language."
 }
