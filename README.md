@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/egebilecen/egebilecen.github.io/blob/master/img/EB_logo.png" width="175" />
+  <img alt="Logo" src="https://github.com/egebilecen/egebilecen.github.io/blob/main/img/EB_logo.png" width="175" />
 </div>
 
 <h1 align="center">
@@ -11,5 +11,5 @@
 </p>
 
 <div align="center">
-  <img alt="Demo" src="https://github.com/egebilecen/egebilecen.github.io/blob/master/img/portfolio-preview.png" />
+  <img alt="Demo" src="https://github.com/egebilecen/egebilecen.github.io/blob/main/img/portfolio-preview.png" />
 </div>
