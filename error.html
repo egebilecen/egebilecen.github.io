@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/error.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body translate="no">
+    <div id="error">
+        <div id="box"></div>
+        <h3>ERROR 500</h3>
+        <p>Bir <span>hata</span> meydana geldi...</p>
+        <p>Lütfen daha sonra tekrar deneyiniz.</p>
+        <p>
+            <a href="#" onclick="history.back()" style="cursor: pointer;">< Geri</a>
+            <a href="#" onclick="window.location='/'">Anasayfa</a>
+        </p>
+    </div>
+
+    <script>
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+
+        if(params.code != null)
+        {
+            var styleManager = (function() {
+                var style = document.createElement("style")
+                
+                style.appendChild(document.createTextNode("")); // WebKit hack
+                document.head.appendChild(style);
+                
+                function getStyleRuleIndexBySelector(selector, prop){
+                    var result = [], i,
+                        value = (prop ? selector + "{" + prop + "}" : selector).replace(/\s/g, ''), // remove whitespaces
+                        s = prop ? "cssText" : "selectorText";
+
+                    for( i=0; i < style.sheet.cssRules.length; i++ )
+                        if( style.sheet.cssRules[i][s].replace(/\s/g, '') == value)
+                            result.push(i);
+
+                    return result;
+                };
+
+                return {
+                    style : style,
+                    getStyleRuleIndexBySelector : getStyleRuleIndexBySelector,
+                    add(prop, value){
+                        return style.sheet.insertRule(`${prop}{${value}}`, style.sheet.cssRules.length);
+                    },
+                    remove(selector, prop){
+                        var indexes = getStyleRuleIndexBySelector(selector, prop), i = indexes.length;
+                        
+                        for( ; i-- ; )
+                            style.sheet.deleteRule( indexes[i] );
+                    }
+                }
+            })();
+
+            document.querySelector("body div#error h3").innerHTML = "ERROR " + params.code;
+
+            styleManager.add("body div#error h3::before", "content:\""+"ERROR " + params.code+"\";")
+            styleManager.add("body div#error h3::after", "content:\""+"ERROR " + params.code+"\";")
+        }
+    </script>
+</body>
+</html>
