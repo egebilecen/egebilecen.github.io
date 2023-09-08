@@ -9,7 +9,3 @@
 <p align="center">
   Built with using <b>HTML</b>, <b>CSS</b> and <b>Javascript</b>.
 </p>
-
-<div align="center">
-  <img alt="Demo" src="https://github.com/egebilecen/egebilecen.github.io/blob/main/img/portfolio-preview.png" />
-</div>
