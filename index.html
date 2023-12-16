@@ -1,32 +1,32 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta
-            name="description"
             content="Hello, I am Ege, and I am a mechatronics engineer. I specialize in software development. This is my website, where I share my work."
+            name="description"
         />
-        <title eb-localization="site-title">Ege Bilecen - Portfolyo</title>
-        <link rel="icon" type="image/png" href="img/EB_logo.png" />
-        <link rel="apple-touch-icon" href="img/EB_logo.png" />
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/fontawesome.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
+        <title eb-localization="site-title">Ege Bilecen - Portfolio</title>
+        <link href="img/EB_logo.png" rel="icon" type="image/png" />
+        <link href="img/EB_logo.png" rel="apple-touch-icon" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/fontawesome.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
     </head>
-
     <body>
         <div class="loader"></div>
         <div class="container" id="main" style="background: #fbfbfb">
             <div id="language-selector">
                 <label class="button-toggle-wrap">
-                    <span class="fw-bold" id="current-language">TR</span>
+                    <span class="fw-bold" id="current-language">EN</span>
                     <input
                         class="toggler"
-                        type="checkbox"
                         name="language"
-                        value="tr"
+                        type="checkbox"
+                        value="en"
                     />
                     <div class="button-toggle">
                         <div class="handle">
@@ -39,102 +39,101 @@
                 <div class="col-lg-1"></div>
                 <div class="col-sm-8 col-lg-4">
                     <img
-                        src="img/ege4.jpg"
-                        class="d-block mx-lg-auto img-fluid"
                         alt="Personal Photo"
+                        class="d-block mx-lg-auto img-fluid"
+                        src="img/ege4.jpg"
                     />
                 </div>
                 <div class="col-lg-6">
                     <h1 class="fw-bold lh-1 mb-3">
                         <span eb-localization="title-1"
-                            >Merhaba, ben Ege ve ben</span
+                            >Hello, I am Ege, and I am a</span
                         >
                         <span
+                            eb-localization="title-2"
                             style="
                                 color: white;
                                 background: black;
                                 line-height: 1.8;
                             "
-                            eb-localization="title-2"
-                            >mekatronik mühendisiyim</span
+                            >mechatronics engineer</span
                         >.
                     </h1>
                     <p
-                        style="color: #606060; text-align: justify"
                         eb-localization="title-3"
+                        style="color: #606060; text-align: justify"
                     >
-                        Ben yazılım alanında uzmanlaştım. Birden fazla
-                        birbirinden farklı alanlarda ve programlama dillerinde
-                        çalışmalar gerçekleştirdim. Bu yüzden farklı projelere
-                        ve farklı programlama dillerine adapte olma sürecim
-                        oldukça hızlı.
+                        I specialize in software development. I have done a
+                        variety of work in various fields, such as embedded
+                        programming, web development, mobile development, using
+                        various programming languages. Because of this, I am
+                        quite quick to adapt to new projects and new programming
+                        languages.
                     </p>
                     <div
                         class="d-grid gap-2 d-md-flex justify-content-md-start"
                     >
                         <a
-                            href="https://github.com/egebilecen"
-                            target="_blank"
                             class="btn btn-lg px-4 fw-bold"
+                            href="https://github.com/egebilecen"
                             style="
                                 background-color: black;
                                 color: white;
                                 font-size: 1rem;
                             "
+                            target="_blank"
                             ><i class="fa-brands fa-github"></i> GitHub</a
                         >
                         <a
-                            href="https://www.linkedin.com/in/egebilecen/"
-                            target="_blank"
                             class="btn btn-lg px-4 fw-bold"
+                            href="https://www.linkedin.com/in/egebilecen/"
                             style="
                                 background-color: #0072b1;
                                 color: white;
                                 font-size: 1rem;
                             "
+                            target="_blank"
                             ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
                         >
                         <a
-                            href="CV.pdf"
-                            target="_blank"
                             class="btn btn-lg px-4 fw-bold"
+                            href="CV.pdf"
                             style="
                                 color: #535353;
                                 font-size: 1rem;
                                 border: 1px solid #6c757d;
                             "
+                            target="_blank"
                             ><i class="fa-solid fa-file"></i> CV</a
                         >
                         <a
-                            href="mailto:ege@r0m.cc"
-                            target="_blank"
                             class="btn btn-lg px-4 fw-bold"
+                            href="mailto:ege@r0m.cc"
                             style="
                                 color: #535353;
                                 font-size: 1rem;
                                 border: 1px solid #6c757d;
                             "
+                            target="_blank"
                             ><i class="fa-solid fa-envelope"></i> Mail</a
                         >
                     </div>
                 </div>
             </div>
-
             <h2 class="text-center fw-bold h1" eb-localization="my-works">
-                Çalışmalarım
+                My Works
             </h2>
             <div class="d-block mb-5" style="text-align: center">
                 <p
-                    style="max-width: 50%; margin: 0 auto; color: #aaa"
                     eb-localization="my-works-desc"
+                    style="max-width: 50%; margin: 0 auto; color: #aaa"
                 ></p>
             </div>
-
             <ul
                 class="list-group list-group-horizontal justify-content-center custom-list portfolio-filter mb-2"
             >
                 <li class="list-group-item selected" data-filter="all">
-                    <span eb-localization="item-all">Tümü</span>
+                    <span eb-localization="item-all">All</span>
                     <span class="item-total"></span>
                 </li>
                 <li class="list-group-item" data-filter=".bot">
@@ -194,12 +193,12 @@
                     <span class="item-total"></span>
                 </li>
                 <li class="list-group-item" data-filter=".automation">
-                    <span eb-localization="item-automation">Otomasyon</span>
+                    <span eb-localization="item-automation">Automation</span>
                     <span class="item-total"></span>
                 </li>
                 <li class="list-group-item" data-filter=".image-processing">
                     <span eb-localization="item-image-processing"
-                        >Görüntü İşleme</span
+                        >Image Processing</span
                     >
                     <span class="item-total"></span>
                 </li>
@@ -224,55 +223,54 @@
                     <span class="item-total"></span>
                 </li>
                 <li class="list-group-item" data-filter=".game-mod">
-                    <span eb-localization="item-game-mod">Oyun Modu</span>
+                    <span eb-localization="item-game-mod">Game Mod</span>
                     <span class="item-total"></span>
                 </li>
             </ul>
-
             <div
                 class="portfolio-item-list row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 px-5 pb-3"
             >
                 <div class="col portfolio-item python image-processing">
                     <div class="card shadow-sm h-100">
                         <div
-                            id="carouselCircleDetection"
                             class="carousel slide"
                             data-bs-ride="carousel"
+                            id="carouselCircleDetection"
                         >
                             <div class="carousel-indicators">
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselCircleDetection"
-                                    data-bs-slide-to="0"
-                                    class="active"
                                     aria-current="true"
                                     aria-label="Slide 1"
+                                    class="active"
+                                    data-bs-slide-to="0"
+                                    data-bs-target="#carouselCircleDetection"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselCircleDetection"
-                                    data-bs-slide-to="1"
                                     aria-label="Slide 2"
+                                    data-bs-slide-to="1"
+                                    data-bs-target="#carouselCircleDetection"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselCircleDetection"
-                                    data-bs-slide-to="2"
                                     aria-label="Slide 3"
+                                    data-bs-slide-to="2"
+                                    data-bs-target="#carouselCircleDetection"
+                                    type="button"
                                 ></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img
+                                        alt="Circle Detection Algorithm Demo"
+                                        height="255"
                                         loading="lazy"
                                         src="img/circle_detection.jpeg"
                                         width="100%"
-                                        height="255"
-                                        alt="Circle Detection Algorithm Demo"
                                     />
                                 </div>
                                 <div class="carousel-item">
-                                    <video class="card-img-top" controls>
+                                    <video class="card-img-top" controls="">
                                         <source
                                             src="img/circle_detection_1.mp4"
                                             type="video/mp4"
@@ -280,7 +278,7 @@
                                     </video>
                                 </div>
                                 <div class="carousel-item">
-                                    <video class="card-img-top" controls>
+                                    <video class="card-img-top" controls="">
                                         <source
                                             src="img/circle_detection_2.mp4"
                                             type="video/mp4"
@@ -290,36 +288,35 @@
                             </div>
                             <button
                                 class="carousel-control-prev"
-                                type="button"
-                                data-bs-target="#carouselCircleDetection"
                                 data-bs-slide="prev"
+                                data-bs-target="#carouselCircleDetection"
+                                type="button"
                             >
                                 <span
-                                    class="carousel-control-prev-icon"
                                     aria-hidden="true"
+                                    class="carousel-control-prev-icon"
                                 ></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button
                                 class="carousel-control-next"
-                                type="button"
-                                data-bs-target="#carouselCircleDetection"
                                 data-bs-slide="next"
+                                data-bs-target="#carouselCircleDetection"
+                                type="button"
                             >
                                 <span
-                                    class="carousel-control-next-icon"
                                     aria-hidden="true"
+                                    class="carousel-control-next-icon"
                                 ></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="image-proc-circle-title"
                             >
-                                Görüntü İşleme ile Renkli Daire Tespiti
+                                Colored Circle Detecting with Image Processing
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -328,40 +325,40 @@
                                 class="card-text"
                                 eb-localization="image-proc-circle-desc"
                             >
-                                2020 yılında düzenlenen
-                                <b
-                                    >TEKNOFEST Uluslar Arası İnsansız Hava Aracı
-                                    Yarışması</b
-                                >nın 2. görevine yönelik yazmış olduğum görüntü
-                                işleme wrapperıdır. Bu wrapper iki ayrı işlem
-                                yapmaktadır. Öncelikle HSV renk uzayında yer
-                                alan renk aralığına göre bir filtreleme işlemi
-                                yaparak istenilen renge uygun olan alanın
-                                filtrelenip contour tespiti ile özelliklerinin
-                                (konumu, alanı vs.) çıkartılması
-                                gerçekleştirilmiştir. Daha sonra bulunan contour
-                                merkezlerinin birbirlerine olan uzaklığına bağlı
-                                olarak ortalama değerleri alınıp tek bir nokta
-                                olacak şekilde birleştirilmiştirler. Bu işlemden
-                                sonra birleştirilmiş olan noktanın bulunduğu
-                                bölüm (point of interest) orjinal frame
-                                üzerinden belirli bir boyutta kesilerek
-                                OpenCV'de yer alan <b>HoughCircles</b> daire
-                                tespit etme metodu uygulanmıştır. Orjinal frame
-                                üzerinden belirli bir alan kesilip bunun
-                                üzerinde daire tespit metodu uygulanmasının asıl
-                                sebebi bütün bir frame üzerinde daire tespitinin
-                                yapılması yavaş bir işlem olmasından dolayı
-                                bunun yerine tespit ettiğimiz renkli alanın
-                                bulunduğu kısımda arama yapılmasının çok daha
-                                hızlı olmasıdır. Daha sonra bu point of interest
-                                üzerindeki daire merkezleri de birbirlerine
-                                uzaklık seviyelerine göre birleştirilip tek bir
-                                nokta haline getirilmiştir. Bu nokta ile de tek
-                                bir noktada birleştirilmiş contour merkezleri de
-                                filtrelenip tek bir nokta haline getirilerek
-                                tespit edilmek istenilen renkli dairenin merkez
-                                noktası tespit edilmiş olunur.
+                                This is a wrapper I did write for
+                                &lt;b&gt;TEKNOFEST International Unmanned Aerial
+                                Vehicles - Drone Category&lt;/b&gt; 2020
+                                competition's second task. This wrapper works in
+                                two steps. First, a filtering is done using HSV
+                                color range of desired color in HSV color space.
+                                Then extracting the contour areas and their
+                                details such as area position, size, etc. After
+                                this; based on distance of contour area center
+                                points, their mean values will be calculated and
+                                will be combined into single point. This point
+                                represents the point of interest that will be
+                                cropped from original frame using some arbitrary
+                                dimension and will be given into
+                                &lt;b&gt;HoughCircles&lt;/b&gt; circle detection
+                                function of OpenCV as a parameter. The main
+                                reason for cropping the point of interest from
+                                the original frame using some arbitrary
+                                dimension is, applying
+                                &lt;b&gt;HoughCircles&lt;/b&gt; circle detection
+                                method on original frame would be much more
+                                slower than just detecting the circles in point
+                                of interest. Especially considering original
+                                frame is a 1920x1080 frame meanwhile cropped
+                                point of interest would be something around
+                                500x500. Then; as second step, detected circle
+                                center points in point of interest frame will be
+                                combined into one point based on their center
+                                points' distance between other circles' center
+                                points. Then this single combined center point
+                                will be combined with the center point of the
+                                combined contour areas into single point. This
+                                final point will be the detected cirle's center
+                                point.
                             </p>
                         </div>
                         <div
@@ -380,24 +377,22 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item cs xamarin-forms ros automation">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Mesh Network System Overview"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/mesh.png"
                             width="100%"
-                            height="255"
-                            alt="Mesh Network System Overview"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="mesh-network-home-title"
                             >
-                                Mesh Network ile Ev Otomasyonu
+                                Home Automation with Mesh Network
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -406,65 +401,63 @@
                                 class="card-text"
                                 eb-localization="mesh-network-home-desc"
                             >
-                                Bu projede bir ev otomasyonu için mesh network
-                                kurulup sensörlerden gelen verilerin ev
-                                içerisinde konumlandırılan
-                                <b>System on Chip</b> sistemin server olarak
-                                çalışması ile bir mobil uygulama üzerinde
-                                yayınlanması (gösterilmesi)
-                                gerçekleştirilmiştir. <b>SoC</b> olarak düşük
-                                maaliyetinden dolayı
-                                <b>Raspberry PI 3</b> tercih edilmiştir. Mesh
-                                networkü oluşturmak için
-                                <b>painlessMesh</b> kütüphanesi kullanılmıştır
-                                ve kontrolcü kartları olarak
-                                <b>NodeMCU</b> tercih edilmiştir. Mobil uygulama
-                                servere serverin local WiFi ağındaki IP adresi
-                                ile bağlanmaktadır. Server ile root node
-                                arasındaki haberleşme <b>ROS</b> kullanılarak
-                                yapılmaktadır. Root node bütün diğer nodelardan
-                                gelen sensör verilerini
-                                <b>ROS Serial</b> kütüphanesi ile servere
-                                göndermektedir. Root node servere serial kablosu
-                                ile bağlıdır. Bunun sebebi <b>NodeMCU</b>'nun
-                                birden fazla WiFi ağına bağlanamamasıdır. (<b
-                                    >painlessMesh</b
-                                >
-                                kendisi bir access point oluştururken
-                                <b>ROS Serial</b> varolan bir ağa bağlanmaya
-                                çalışmaktadır. Bu da iki kütüphanenin birbirleri
-                                ile çatışmasına sebep olmaktadır.) Mobil
-                                uygulama <b>Xamarin Forms</b> kullanılarak
-                                cross-platform olacak şekilde geliştirilmiştir.
+                                In this project, a mesh network has been created
+                                for published data from several sensors that are
+                                placed separately from each other in order to
+                                reach the &lt;b&gt;System on Chip&lt;/b&gt;
+                                system in the house that is acting as a server.
+                                These sensor data will then be published to the
+                                mobile application that is connected to the
+                                server via &lt;b&gt;Websocket&lt;/b&gt;. I
+                                choosed &lt;b&gt;Raspberry PI 3&lt;/b&gt; as
+                                &lt;b&gt;SoC&lt;/b&gt; because of it's cheap
+                                price. &lt;b&gt;painlessMesh&lt;/b&gt; library
+                                is used for creating the mesh network.
+                                &lt;b&gt;NodeMCU&lt;/b&gt; IoT platform is used
+                                for the nodes in mesh network. Mobile
+                                application connects to the server using it's
+                                local IP address in WiFi network. Communication
+                                between root node and server is done by using
+                                &lt;b&gt;ROS&lt;/b&gt;. Root node sends all
+                                sensor data from child nodes via &lt;b&gt;ROS
+                                Serial&lt;/b&gt; library. Root node is connected
+                                to the server via physical cable. Reason of this
+                                is &lt;b&gt;NodeMCU&lt;/b&gt; being unable to
+                                connect more than one WiFi network. (Meanwhile
+                                &lt;b&gt;painlessMesh&lt;/b&gt; itself creates
+                                an access point, &lt;b&gt;ROS Serial&lt;/b&gt;
+                                library attempts to connect to an exist WiFi
+                                network. This causes these two library to
+                                conflict with each other.) Mobile application is
+                                developed using &lt;b&gt;Xamarin Forms&lt;/b&gt;
+                                to be cross-platform application.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="mesh-network-home-note"
+                                >No source code available for this project as it
+                                has been done as assignment in my
+                                collage.</small
                             >
-                                Mekatronik Tasarım Uygulamaları dersi için
-                                yapıldığından kaynak kodu bulunmamaktadır.
-                            </small>
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item cpp html-css cordova automation">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="House Automation Application Interface"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/eb.png"
                             width="100%"
-                            height="255"
-                            alt="House Automation Application Interface"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="home-automation-title"
                             >
-                                Ev Otomasyonu
+                                Home Automation
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -473,25 +466,37 @@
                                 class="card-text"
                                 eb-localization="home-automation-desc"
                             >
-                                Bu projede <b>NodeMCU</b> kontrolcü kartının
-                                üzerine bağlanılan sensörlerden alınan verilerin
-                                (sıcaklık sensörü, hareket sensörü vb.) evin
-                                <b>WiFi ağına</b> bağlanılıp, <b>PHP</b> tabanlı
-                                bir API'ye istek gönderilerek hostingde yer alan
-                                veritabanına belirli aralıklarla sensör
-                                verilerinin kayıt edilmesi gerçekleştirilmiştir.
-                                Ayrıca bu veriler <b>Cordova</b> kullanılarak
-                                <b>Android</b> için geliştirdiğim bir uygulama
-                                ile takip edilebilmekte. Bu uygulama üzerinden
-                                veri güncelleme aralığı, sensörlerin aktif/pasif
-                                durum ayarları dahi yapılabilmekte.
+                                In this project, I did use
+                                &lt;b&gt;NodeMCU&lt;/b&gt; IoT platform to
+                                connect to the WiFi network of the house, get
+                                data from connected sensors (temperature sensor,
+                                movement detection sensor etc.) periodically and
+                                store them on my database in a hosting using a
+                                &lt;b&gt;PHP&lt;/b&gt; based API I did write. I
+                                did also use &lt;b&gt;C++&lt;/b&gt; for the
+                                firmware of &lt;b&gt;NodeMCU&lt;/b&gt;. In
+                                addition, I used &lt;b&gt;Cordova&lt;/b&gt; to
+                                create a mobile webview application for
+                                &lt;b&gt;Android&lt;/b&gt; using
+                                &lt;b&gt;HTML&lt;/b&gt;, &lt;b&gt;CSS&lt;/b&gt;
+                                and &lt;b&gt;Javascript&lt;/b&gt;. All of the
+                                sensor data can be tracked in this application.
+                                This application also allows user to extensively
+                                update settings of all components. Such as
+                                updating sensor status (activated /
+                                deactivated), changing their polling rates and
+                                even adding sleep time (this can be useful to
+                                prevent notification spam for sensors like
+                                movement detection sensor as
+                                &lt;b&gt;NodeMCU&lt;/b&gt; sends notification to
+                                the application every time sensor is triggered).
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="home-automation-note"
-                                >Uygulama görselleri GitHub reposundaki
-                                "<b>home_controller_app</b>" klasörü
-                                altındadır.</small
+                                >Application pictures are under the
+                                "&lt;b&gt;home_controller_app&lt;/b&gt;"
+                                directory of GitHub repo.</small
                             >
                         </div>
                         <div
@@ -510,144 +515,142 @@
                         </div>
                     </div>
                 </div>
-
                 <div
                     class="col portfolio-item rust html-css javascript react tauri"
                 >
                     <div class="card shadow-sm h-100">
                         <div
-                            id="carouselLicenseGenerator"
                             class="carousel slide"
                             data-bs-ride="carousel"
+                            id="carouselLicenseGenerator"
                         >
                             <div class="carousel-indicators">
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselLicenseGenerator"
-                                    data-bs-slide-to="0"
-                                    class="active"
                                     aria-current="true"
                                     aria-label="Slide 1"
+                                    class="active"
+                                    data-bs-slide-to="0"
+                                    data-bs-target="#carouselLicenseGenerator"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselLicenseGenerator"
-                                    data-bs-slide-to="1"
                                     aria-label="Slide 2"
+                                    data-bs-slide-to="1"
+                                    data-bs-target="#carouselLicenseGenerator"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselLicenseGenerator"
-                                    data-bs-slide-to="2"
                                     aria-label="Slide 3"
+                                    data-bs-slide-to="2"
+                                    data-bs-target="#carouselLicenseGenerator"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselLicenseGenerator"
-                                    data-bs-slide-to="3"
                                     aria-label="Slide 4"
+                                    data-bs-slide-to="3"
+                                    data-bs-target="#carouselLicenseGenerator"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselLicenseGenerator"
-                                    data-bs-slide-to="4"
                                     aria-label="Slide 5"
+                                    data-bs-slide-to="4"
+                                    data-bs-target="#carouselLicenseGenerator"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselLicenseGenerator"
-                                    data-bs-slide-to="5"
                                     aria-label="Slide 6"
+                                    data-bs-slide-to="5"
+                                    data-bs-target="#carouselLicenseGenerator"
+                                    type="button"
                                 ></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img
+                                        alt="License Generator UI 1"
+                                        height="255"
                                         loading="lazy"
                                         src="img/license_gen_1.png"
                                         width="100%"
-                                        height="255"
-                                        alt="License Generator UI 1"
                                     />
                                 </div>
                                 <div class="carousel-item">
                                     <img
+                                        alt="License Generator UI 2"
+                                        height="255"
                                         loading="lazy"
                                         src="img/license_gen_2.png"
                                         width="100%"
-                                        height="255"
-                                        alt="License Generator UI 2"
                                     />
                                 </div>
                                 <div class="carousel-item">
                                     <img
+                                        alt="License Generator UI 3"
+                                        height="255"
                                         loading="lazy"
                                         src="img/license_gen_3.png"
                                         width="100%"
-                                        height="255"
-                                        alt="License Generator UI 3"
                                     />
                                 </div>
                                 <div class="carousel-item">
                                     <img
+                                        alt="License Generator UI 4"
+                                        height="255"
                                         loading="lazy"
                                         src="img/license_gen_4.png"
                                         width="100%"
-                                        height="255"
-                                        alt="License Generator UI 4"
                                     />
                                 </div>
                                 <div class="carousel-item">
                                     <img
+                                        alt="License Generator UI 5"
+                                        height="255"
                                         loading="lazy"
                                         src="img/license_gen_5.png"
                                         width="100%"
-                                        height="255"
-                                        alt="License Generator UI 5"
                                     />
                                 </div>
                                 <div class="carousel-item">
                                     <img
+                                        alt="License Generator UI 6"
+                                        height="255"
                                         loading="lazy"
                                         src="img/license_gen_6.png"
                                         width="100%"
-                                        height="255"
-                                        alt="License Generator UI 6"
                                     />
                                 </div>
                             </div>
                             <button
                                 class="carousel-control-prev"
-                                type="button"
-                                data-bs-target="#carouselLicenseGenerator"
                                 data-bs-slide="prev"
+                                data-bs-target="#carouselLicenseGenerator"
+                                type="button"
                             >
                                 <span
-                                    class="carousel-control-prev-icon"
                                     aria-hidden="true"
+                                    class="carousel-control-prev-icon"
                                 ></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button
                                 class="carousel-control-next"
-                                type="button"
-                                data-bs-target="#carouselLicenseGenerator"
                                 data-bs-slide="next"
+                                data-bs-target="#carouselLicenseGenerator"
+                                type="button"
                             >
                                 <span
-                                    class="carousel-control-next-icon"
                                     aria-hidden="true"
+                                    class="carousel-control-next-icon"
                                 ></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="license-generator-title"
                             >
-                                Lisans Oluşturucu
+                                License Generator
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -656,40 +659,38 @@
                                 class="card-text"
                                 eb-localization="license-generator-desc"
                             >
-                                Bu projede <b>Tauri</b> ve
-                                <b>React</b> kullanılarak geliştirilmiş bir
-                                arayüzün <b>Rust</b> programlama dili aracılığı
-                                ile kendi programlarım için geçerli olan lisans
-                                dosyaları oluşturma işlemi gerçekleştirilmiştir.
+                                An application developed using
+                                &lt;b&gt;Tauri&lt;/b&gt; and
+                                &lt;b&gt;React&lt;/b&gt; for generating valid
+                                license files for my own applications with
+                                &lt;b&gt;Rust&lt;/b&gt; programming language.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="personal-work-desc"
-                                >Kişisel amaçlar için yapıldığından dolayı
-                                kaynak kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done for personal purposes.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item cpp">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Nextion UI Design"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/nextion_screen.png"
                             width="100%"
-                            height="255"
-                            alt="Nextion UI Design"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="car-screen-design-title"
                             >
-                                Elektrikli Araç Ekran Tasarımı ve Haberleşme
-                                Yazılımı
+                                Electrical Car Screen Design and Communication
+                                Software
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -698,46 +699,42 @@
                                 class="card-text"
                                 eb-localization="car-screen-design-desc"
                             >
-                                2021 yılında düzenlenen
-                                <b
-                                    >TEKNOFEST Efficiency Challenge Elektrikli
-                                    Araç</b
-                                >
-                                yarışmasının isterlerine uygun olacak şekilde
-                                <b>Nextion Ekrana</b> (HMI çözümüne) yönelik
-                                hazırlamış olduğum ekran tasarımıdır. Araç
-                                içerisinde bulunan mikrodenetleyici ile olan
-                                haberleşmesini ise serial port aracılığı ile C++
-                                kullanarak gerçekleştirdim.
+                                My screen design for &lt;b&gt;TEKNOFEST
+                                Efficiency Challenge Electrical
+                                Vehicle&lt;/b&gt; 2021 competetion to satisfy
+                                competition rules using &lt;b&gt;Nextion
+                                Screen&lt;/b&gt; (HMI Solution). I did write the
+                                communication between the microcontroller inside
+                                the car and screen using &lt;b&gt;C++&lt;/b&gt;.
+                                Also, serial communication protocol is used
+                                through serial port.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="car-screen-design-note"
-                                >Ben bir tasarımcı olmadığım için ekran tasarımı
-                                haliyle biraz kötü oldu. 😅</small
+                                >As I am not a UI designer, screen design is
+                                quite bad. 😅</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item cs bot">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Discord Bot Logo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/dcbot.jpeg"
                             width="100%"
-                            height="255"
-                            alt="Discord Bot Logo"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="pz-server-discord-bot-title"
                             >
-                                Project Zomboid Server Yönetimi için Discord
-                                Botu
+                                Discord Bot for Project Zomboid Server
+                                Management
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -746,17 +743,16 @@
                                 class="card-text"
                                 eb-localization="pz-server-discord-bot-desc"
                             >
-                                <b>Project Zomboid</b> oyununun serverini
-                                discord üzerinden yönetmek için geliştirilmiş
-                                bir <b>C#</b> uygulamasıdır.
-                                <b>Discord.NET</b> kütüphanesini kullanmaktadır.
-                                Project Zomboid server konsoluna el ile komutlar
-                                girilebilmektedir. Fakat bu bot sayesinde bota
-                                komutlar gönderilerek server yönetimi
-                                gerçekleştirilebilmektedir. Bu bot ile ek olarak
-                                Project Zomboid serverinde yer almayan (her 6
-                                saatte bir otomatik yeniden başlatma vb.)
-                                özellikler de bulunmaktadır.
+                                A discord bot I have written for managing
+                                &lt;b&gt;Project Zomboid&lt;/b&gt; server
+                                console remotely through discord using
+                                &lt;b&gt;C#&lt;/b&gt; and
+                                &lt;b&gt;Discord.NET&lt;/b&gt; library. Also,
+                                this bot adds more functionality to the server
+                                that normally aren't available such as automated
+                                server restarts every 6 hours, mod update
+                                detections, auto start in case of server dying,
+                                etc.
                             </p>
                         </div>
                         <div
@@ -775,24 +771,22 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item php bot">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Crypto Tracker Notification Example"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/crypto-tracker.jpeg"
                             width="100%"
-                            height="255"
-                            alt="Crypto Tracker Notification Example"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="crypto-coin-tracker-title"
                             >
-                                Kripto Para Takibi
+                                Crypto Coin Tracker
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -801,37 +795,35 @@
                                 class="card-text"
                                 eb-localization="crypto-coin-tracker-desc"
                             >
-                                <b>PHP</b> kullanılarak yazılmış bir cronjob
-                                scripti ile belirli aralıklarla
-                                <b>CoinMarketCap</b>'in API'si kullanılarak
-                                istenilen kripto paraların değişimini takip
-                                edip, belirlenen eşik değerinin üzerinde veya
-                                altında bir değişim varsa <b>Catapush</b> adlı
-                                uygulama üzerinden (API'lerini kullanarak)
-                                kullanıcılara push notification gönderen bir
-                                proje.
+                                In this project, I did write a
+                                &lt;b&gt;PHP&lt;/b&gt; cronjob script to
+                                periodically check a few crypto coin's change
+                                percentages and send push notifications to the
+                                users via an app called
+                                &lt;b&gt;Catapush&lt;/b&gt; (using their API) if
+                                the percentage change is above or below the
+                                specified threshold using
+                                &lt;b&gt;CoinMarketCap&lt;/b&gt; API.
                             </p>
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item cs windows-forms">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Portrait Generation Application UI"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/nwn.png"
                             width="100%"
-                            height="255"
-                            alt="Portrait Generation Application UI"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="nwn-portrait-program-title"
                             >
-                                Portre Oluşturma Uygulaması
+                                Portrait Generation Application
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -840,14 +832,15 @@
                                 class="card-text"
                                 eb-localization="nwn-portrait-program-desc"
                             >
-                                <b>Neverwinter Nights</b> oyunu için
-                                geliştirilmiş bir portre düzenleyicisidir.
-                                <b>C#</b> ile <b>Windows Forms</b> kullanılarak
-                                hazırlanmıştır. Kullanıcının seçmiş olduğu resim
-                                (portre) dosyasını otomatik olarak oyunun kabul
-                                ettiği boyutlara getirmektedir. Ayrıca
-                                kullanıcıya portrenin bir kısımını da kesme
-                                imkanı sunmaktadır.
+                                A program I have written for
+                                &lt;b&gt;Neverwinter Nights&lt;/b&gt; game to
+                                automatically generate portraits from selected
+                                portrait (image) that matches with the game's
+                                portrait size rules. I did use
+                                &lt;b&gt;C#&lt;/b&gt; and &lt;b&gt;Windows
+                                Forms&lt;/b&gt; for this application. It also
+                                features cropping based on portrait size (This
+                                game has four different portrait sizes).
                             </p>
                         </div>
                         <div
@@ -866,24 +859,22 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item html-css javascript">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Drone Simulation Demo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/drone.png"
                             width="100%"
-                            height="255"
-                            alt="Drone Simulation Demo"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="2d-drone-simulation-title"
                             >
-                                2D Drone Sürü Simülasyonu
+                                2D Drone Swarm Simulation
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -892,25 +883,22 @@
                                 class="card-text"
                                 eb-localization="2d-drone-simulation-desc"
                             >
-                                Bu projede
-                                <b>HTML, CSS ve Javascript</b> kullanılarak
-                                basit bir sürü hareket simülasyonu
-                                geliştirilmiştir. Şu anda çizgi, V ve daire
-                                olmak üzere 3 formasyon bulunmaktadır.
-                                Droneların hareket ederken birbirlerine
-                                çarpmaması için yol bulma algoritması henüz
-                                entegre edilmemiştir.
+                                In this project, I did use
+                                &lt;b&gt;HTML&lt;/b&gt;, &lt;b&gt;CSS&lt;/b&gt;
+                                and &lt;b&gt;Javascript&lt;/b&gt; to simulate
+                                swarm movement. At the time being, only 3
+                                formations are available: Line, V and Circle.
+                                The algorithm for preventing drone to drone
+                                collisions aren't implemented yet.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="2d-drone-simulation-note"
+                                >&lt;b&gt;Note for Demo:&lt;/b&gt;&lt;br /&gt;
+                                You can enable swarm movement by clicking to the
+                                most top right button. It is disabled as default
+                                for test purposes.</small
                             >
-                                <b>Demo Notu:</b><br />
-                                En sağ üstte yer alan butona basarak sürü
-                                hareketini aktif edebilirsiniz. Bazı test
-                                sebeplerinden dolayı hareket varsayılan olarak
-                                devre dışı.
-                            </small>
                         </div>
                         <div
                             style="position: relative; left: 15px; bottom: 12px"
@@ -936,22 +924,20 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item cs windows-forms">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/2022-10-15 17-57-08.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="bill-generator-title"
                             >
-                                Fatura Oluşturucu
+                                Bill Generator
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -960,52 +946,54 @@
                                 class="card-text"
                                 eb-localization="bill-generator-desc"
                             >
-                                Bu projede bir excel dosyasında yer alan
-                                kayıtların başlıklarının sürekle bırak yoluya
-                                seçilen görselin üzerine yerleştirilip bir
-                                fatura oluşturulması gerçekleştirilmiştir.
-                                Fatura oluşturma işlemi bitirildiği zaman bütün
-                                veriler sırası ile seçilen görsel üzerine
-                                yerleştirilip otomatik çıktı işlemi
-                                yapılmaktadır.
-                                <b>C#</b> ile <b>Windows Forms</b> kullanılarak
-                                hazırlanmıştır.
+                                In this project, one can create a bill using the
+                                records stored in an excel file and drag-n-drop
+                                their headings to the spots they want to fill
+                                with the record on selected bill's picture. When
+                                the bill creation is done, all the records in
+                                the excel file will be placed on heading's
+                                dragged location and will be automatically
+                                printed out. I did use &lt;b&gt;C#&lt;/b&gt; and
+                                &lt;b&gt;Windows Forms&lt;/b&gt; for this
+                                application.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item html-css javascript nodejs">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Image of Game"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/woz.png"
                             width="100%"
-                            height="255"
-                            alt="Image of Game"
                         />
-
                         <div class="card-body">
                             <p class="fw-bold mb-1" eb-localization="woz-title">
-                                Browser Tabanlı 2D Multiplayer Oyun
+                                Browser Based 2D Multiplayer Game
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
                             ></ul>
                             <p class="card-text" eb-localization="woz-desc">
-                                Bu projede client tarafında
-                                <b>HTML, CSS ve Javascript</b>, server kısımında
-                                ise <b>NodeJS ve Socket.IO</b> kullanılarak
-                                browser tabanlı 2D bir multiplayer oyun
-                                yapılmıştır. Kullanıcı verilerini saklamak için
-                                <b>MongoDB</b> kullanılmıştır.
+                                In this 2D browser based multiplayer game
+                                project, I did use &lt;b&gt;HTML&lt;/b&gt;,
+                                &lt;b&gt;CSS&lt;/b&gt; and
+                                &lt;b&gt;Javascript&lt;/b&gt; for the client
+                                side and &lt;b&gt;NodeJS&lt;/b&gt; for the
+                                server side. Communication between client and
+                                server done using websockets. I did use
+                                &lt;b&gt;Socket.IO&lt;/b&gt; library for this.
+                                Also character data stored on a
+                                &lt;b&gt;MongoDB&lt;/b&gt; database.
                             </p>
                         </div>
                         <div
@@ -1024,108 +1012,106 @@
                         </div>
                     </div>
                 </div>
-
                 <div
                     class="col portfolio-item php html-css javascript bot web-scraping"
                 >
                     <div class="card shadow-sm h-100">
                         <div
-                            id="carouselArelithPortalTracker"
                             class="carousel slide"
                             data-bs-ride="carousel"
+                            id="carouselArelithPortalTracker"
                         >
                             <div class="carousel-indicators">
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselArelithPortalTracker"
-                                    data-bs-slide-to="0"
-                                    class="active"
                                     aria-current="true"
                                     aria-label="Slide 1"
+                                    class="active"
+                                    data-bs-slide-to="0"
+                                    data-bs-target="#carouselArelithPortalTracker"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselArelithPortalTracker"
-                                    data-bs-slide-to="1"
                                     aria-label="Slide 2"
+                                    data-bs-slide-to="1"
+                                    data-bs-target="#carouselArelithPortalTracker"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselArelithPortalTracker"
-                                    data-bs-slide-to="2"
                                     aria-label="Slide 3"
+                                    data-bs-slide-to="2"
+                                    data-bs-target="#carouselArelithPortalTracker"
+                                    type="button"
                                 ></button>
                                 <button
-                                    type="button"
-                                    data-bs-target="#carouselArelithPortalTracker"
-                                    data-bs-slide-to="3"
                                     aria-label="Slide 4"
+                                    data-bs-slide-to="3"
+                                    data-bs-target="#carouselArelithPortalTracker"
+                                    type="button"
                                 ></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img
+                                        alt="Arelith Portal Tracker Demo 1"
+                                        height="255"
                                         loading="lazy"
                                         src="img/are-portal-1.png"
                                         width="100%"
-                                        height="255"
-                                        alt="Arelith Portal Tracker Demo 1"
                                     />
                                 </div>
                                 <div class="carousel-item">
                                     <img
+                                        alt="Arelith Portal Tracker Demo 2"
+                                        height="255"
                                         loading="lazy"
                                         src="img/are-portal-2.png"
                                         width="100%"
-                                        height="255"
-                                        alt="Arelith Portal Tracker Demo 2"
                                     />
                                 </div>
                                 <div class="carousel-item">
                                     <img
+                                        alt="Arelith Portal Tracker Demo 3"
+                                        height="255"
                                         loading="lazy"
                                         src="img/are-portal-3.png"
                                         width="100%"
-                                        height="255"
-                                        alt="Arelith Portal Tracker Demo 3"
                                     />
                                 </div>
                                 <div class="carousel-item">
                                     <img
+                                        alt="Arelith Portal Tracker Demo 4"
+                                        height="255"
                                         loading="lazy"
                                         src="img/are-portal-4.png"
                                         width="100%"
-                                        height="255"
-                                        alt="Arelith Portal Tracker Demo 4"
                                     />
                                 </div>
                             </div>
                             <button
                                 class="carousel-control-prev"
-                                type="button"
-                                data-bs-target="#carouselArelithPortalTracker"
                                 data-bs-slide="prev"
+                                data-bs-target="#carouselArelithPortalTracker"
+                                type="button"
                             >
                                 <span
-                                    class="carousel-control-prev-icon"
                                     aria-hidden="true"
+                                    class="carousel-control-prev-icon"
                                 ></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button
                                 class="carousel-control-next"
-                                type="button"
-                                data-bs-target="#carouselArelithPortalTracker"
                                 data-bs-slide="next"
+                                data-bs-target="#carouselArelithPortalTracker"
+                                type="button"
                             >
                                 <span
-                                    class="carousel-control-next-icon"
                                     aria-hidden="true"
+                                    class="carousel-control-next-icon"
                                 ></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
                         <div class="card-body">
                             <p class="fw-bold mb-1">Arelith Portal Tracker</p>
                             <ul
@@ -1135,11 +1121,13 @@
                                 class="card-text"
                                 eb-localization="arelith-portal-tracker-desc"
                             >
-                                Bu projede bir oyunun web sayfasında yer alan
-                                kullanıcıların bilgileri hosting üzerinde her 15
-                                dakikada bir çalışan cronjob sayesinde
-                                veritabanına kayıt edilerek bir PHP paneli
-                                aracılığı ile kullanıcılara sunulmuştur.
+                                A &lt;b&gt;PHP&lt;/b&gt; and
+                                &lt;b&gt;MySQL&lt;/b&gt; based statistics panel
+                                for tracking a game's user activity. To track
+                                the user activity, I did write a
+                                &lt;b&gt;PHP&lt;/b&gt; cronjob script that runs
+                                every 15 minutes to save the activity into
+                                database.
                             </p>
                         </div>
                         <div
@@ -1158,24 +1146,22 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item php html-css javascript">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Business Management Panel Demo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/thomas.png"
                             width="100%"
-                            height="255"
-                            alt="Business Management Panel Demo"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="business-management-panel-title"
                             >
-                                Yönetim Paneli
+                                Business Management Panel
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1184,35 +1170,33 @@
                                 class="card-text"
                                 eb-localization="business-management-panel-desc"
                             >
-                                Bu projede bir firmanın ihtiyacına yönelik
-                                <b>PHP ve MySQL</b> kullanılarak bir yönetim
-                                paneli geliştirilmiştir.
+                                A &lt;b&gt;PHP&lt;/b&gt; and
+                                &lt;b&gt;MySQL&lt;/b&gt; based management panel
+                                for a business' requirements.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item cs windows-forms web-scraping">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/47ada4bc-4d7e-4f2b-9a0e-8d0acd0b8b3a.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="google-maps-bot-title"
                             >
-                                Google Maps Veri Botu
+                                Google Maps Data Scraper
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1221,40 +1205,35 @@
                                 class="card-text"
                                 eb-localization="google-maps-bot-desc"
                             >
-                                Google Maps üzerinden şehir ve anahtar kelime
-                                listesi kullanılarak bu şehirlerde yer alan
-                                anahtar kelimelere sahip işletmelerin
-                                bilgilerini çeken ve excele kayıt eden bir
-                                uygulama.
-                                <b>C#</b> ile <b>Windows Forms</b> kullanılarak
-                                hazırlanmıştır. Veriler <b>Selenium</b>
-                                kullanılarak çekilmiştir.
+                                An application developed for saving business
+                                details in cities using address and keyword list
+                                into excel using &lt;b&gt;C#&lt;/b&gt; and
+                                &lt;b&gt;Windows Forms&lt;/b&gt;. Data mining is
+                                done with using &lt;b&gt;Selenium&lt;/b&gt;.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python qt web-scraping">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/7ddd182b-9c3e-4593-8938-e2bd35cc2559.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="data-scraper-bot-title"
                             >
-                                Ürün Botu
+                                Product Data Scraper
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1263,36 +1242,34 @@
                                 class="card-text"
                                 eb-localization="data-scraper-bot-desc"
                             >
-                                Bir websitesi üzerinden ürün bilgilerini çeken
-                                ve excele kayıt eden bir uygulama.
-                                <b>Python</b> ile <b>PyQT</b> kullanılarak
-                                hazırlanmıştır.
+                                An application developed for saving products
+                                listed under product categories into excel using
+                                &lt;b&gt;Python&lt;/b&gt; and
+                                &lt;b&gt;PyQT&lt;/b&gt;.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python qt web-scraping">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/8565d56f-f383-4616-9df9-acd76aee0285.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="sahibinden-product-bot-1-title"
                             >
-                                Sahibinden.com Ürün Botu
+                                Sahibinden.com Data Scraper
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1301,39 +1278,38 @@
                                 class="card-text"
                                 eb-localization="sahibinden-product-bot-1-desc"
                             >
-                                Sahibinden websitesi üzerinden ürün bilgilerini
-                                çeken ve excele kayıt eden bir uygulama. Belirli
-                                aralıklar ile IP adresini otomatik olarak
-                                değiştirmektedir.
-                                <b>Python</b> ile <b>PyQT</b> kullanılarak
-                                hazırlanmıştır. Veriler <b>Selenium</b>
-                                kullanılarak çekilmiştir.
+                                An application developed for saving products
+                                listed under product categories from
+                                sahibinden.com into excel using
+                                &lt;b&gt;Python&lt;/b&gt; and
+                                &lt;b&gt;PyQT&lt;/b&gt;. Data mining is done
+                                with using &lt;b&gt;Selenium&lt;/b&gt;. It also
+                                changes the IP using proxy in specified
+                                intervals.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python qt web-scraping">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/29a6dcc2-2c19-4111-8bbf-563e2a0ed70f.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="sahibinden-product-bot-2-title"
                             >
-                                Sahibinden.com Ürün Botu 2
+                                Sahibinden.com Data Scraper 2
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1342,37 +1318,36 @@
                                 class="card-text"
                                 eb-localization="sahibinden-product-bot-2-desc"
                             >
-                                Sahibinden websitesi üzerinden ürün bilgilerini
-                                çeken ve excele kayıt eden bir uygulama.
-                                <b>Python</b> ile <b>PyQT</b> kullanılarak
-                                hazırlanmıştır. Veriler <b>Selenium</b>
-                                kullanılarak çekilmiştir.
+                                An application developed for saving products
+                                listed under product categories from
+                                sahibinden.com into excel using
+                                &lt;b&gt;Python&lt;/b&gt; and
+                                &lt;b&gt;PyQT&lt;/b&gt;. Data mining is done
+                                with using &lt;b&gt;Selenium&lt;/b&gt;.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python qt web-scraping">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/6a618800-6688-44a7-bfd8-4f6af00c1543.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="sahibinden-product-bot-3-title"
                             >
-                                Sahibinden.com Ürün Botu 3
+                                Sahibinden.com Data Scraper 3
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1381,37 +1356,36 @@
                                 class="card-text"
                                 eb-localization="sahibinden-product-bot-3-desc"
                             >
-                                Sahibinden websitesi üzerinden ürün bilgilerini
-                                çeken ve excele kayıt eden bir uygulama.
-                                <b>Python</b> ile <b>PyQT</b> kullanılarak
-                                hazırlanmıştır. Veriler <b>Selenium</b>
-                                kullanılarak çekilmiştir.
+                                An application developed for saving products
+                                listed under product categories from
+                                sahibinden.com into excel using
+                                &lt;b&gt;Python&lt;/b&gt; and
+                                &lt;b&gt;PyQT&lt;/b&gt;. Data mining is done
+                                with using &lt;b&gt;Selenium&lt;/b&gt;.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python qt web-scraping">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/527cf28d-d77e-46c3-bbe0-95ea1e7d43bb.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="sahibinden-ad-bot-title"
                             >
-                                Sahibinden.com Otomatik İlan Botu
+                                Sahibinden.com Auto Product Advertiser
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1420,37 +1394,36 @@
                                 class="card-text"
                                 eb-localization="sahibinden-ad-bot-desc"
                             >
-                                Sahibinden.com websitesinde otomatik ilan veren
-                                bir uygulama.
-                                <b>Python</b> ile <b>PyQT</b> kullanılarak
-                                hazırlanmıştır. Otomasyon işlemi <b>Selenium</b>
-                                kullanılarak yapılmıştır.
+                                An application developed for automatically
+                                advertising the product details that is set in
+                                the application interface on sahibinden.com
+                                using &lt;b&gt;Python&lt;/b&gt; and
+                                &lt;b&gt;PyQT&lt;/b&gt;. Automation is done with
+                                using &lt;b&gt;Selenium&lt;/b&gt;.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python qt web-scraping">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/59b721c5-c001-40a8-9144-4bea4291e369.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="kariyer-net-bot-title"
                             >
-                                Kariyer.net Veri Botu
+                                Kariyer.net Data Scraper
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1459,36 +1432,34 @@
                                 class="card-text"
                                 eb-localization="kariyer-net-bot-desc"
                             >
-                                Kariyer.net websitesi üzerinden ilan bilgilerini
-                                çeken ve excele kayıt eden bir uygulama.
-                                <b>Python</b> ile <b>PyQT</b> kullanılarak
-                                hazırlanmıştır.
+                                An application developed for saving
+                                advertisement details from kariyer.net into
+                                excel using &lt;b&gt;Python&lt;/b&gt; and
+                                &lt;b&gt;PyQT&lt;/b&gt;.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python qt web-scraping">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/a91c86a7-5eb3-495c-882b-3fade3d02410.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="bulurum-com-bot-title"
                             >
-                                Bulurum.com Veri Botu
+                                Bulurum.com Data Scraper
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1497,37 +1468,34 @@
                                 class="card-text"
                                 eb-localization="bulurum-com-bot-desc"
                             >
-                                Bulurum.com websitesi üzerinden arama
-                                sonuçlarını çeken ve excele kayıt eden bir
-                                uygulama.
-                                <b>Python</b> ile <b>PyQT</b> kullanılarak
-                                hazırlanmıştır.
+                                An application developed for saving search
+                                results from bulurum.com into excel using
+                                &lt;b&gt;Python&lt;/b&gt; and
+                                &lt;b&gt;PyQT&lt;/b&gt;.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python qt bot">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/c7ef2c8e-83b5-463f-9439-0cdb5eabbabf.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="twitch-chat-bot-title"
                             >
-                                Twitch Chat Botu
+                                Twitch Chat Bot
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1536,37 +1504,34 @@
                                 class="card-text"
                                 eb-localization="twitch-chat-bot-desc"
                             >
-                                Önceden oluşturulmuş bir kullanıcı listesi
-                                kullanılarak yayıncının chatine mesaj yazan bir
-                                uygulama.
-                                <b>Python</b> ile <b>PyQT</b> kullanılarak
-                                hazırlanmıştır.
+                                An application developed for sending messages
+                                from a pre-prepared account list to a twitch
+                                channel's chat using &lt;b&gt;Python&lt;/b&gt;
+                                and &lt;b&gt;PyQT&lt;/b&gt;.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python qt bot">
                     <div class="card shadow-sm h-100">
-                        <video class="card-img-top" controls>
+                        <video class="card-img-top" controls="">
                             <source
                                 src="img/01ad8498-620c-487c-b96a-afc42dc732de.mp4"
                                 type="video/mp4"
                             />
                         </video>
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="fb-like-bot-title"
                             >
-                                Facebook Beğeni Botu
+                                Facebook Like Bot
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1575,39 +1540,37 @@
                                 class="card-text"
                                 eb-localization="fb-like-bot-desc"
                             >
-                                Facebook gönderisine atılan yorumları beğenen
-                                bir uygulama.
-                                <b>Python</b> ile <b>PyQT</b> kullanılarak
-                                hazırlanmıştır. Otomasyon işlemi <b>Selenium</b>
-                                kullanılarak yapılmıştır.
+                                An application developed for liking replies sent
+                                to a facebook post using
+                                &lt;b&gt;Python&lt;/b&gt; and
+                                &lt;b&gt;PyQT&lt;/b&gt;. Automation is done with
+                                using &lt;b&gt;Selenium&lt;/b&gt;.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item cs windows-forms">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Application Image"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/expense.png"
                             width="100%"
-                            height="255"
-                            alt="Application Image"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="grocery-expense-tracker-title"
                             >
-                                Harcama Takip Uygulaması
+                                Grocery Expense Tracker
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1616,10 +1579,10 @@
                                 class="card-text"
                                 eb-localization="grocery-expense-tracker-desc"
                             >
-                                Günlük harcamaları takip etmek için
-                                geliştirilmiş bir uygulamadır. <b>C#</b> ile
-                                <b>Windows Forms</b> kullanılarak
-                                hazırlanmıştır.
+                                An application developed using
+                                &lt;b&gt;C#&lt;/b&gt; and &lt;b&gt;Windows
+                                Forms&lt;/b&gt; for tracking daily grocery
+                                expenses.
                             </p>
                         </div>
                         <div
@@ -1638,18 +1601,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item cs windows-forms">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Last Epoc Save Importer / Exporter UI"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/le.png"
                             width="100%"
-                            height="255"
-                            alt="Last Epoc Save Importer / Exporter UI"
                         />
-
                         <div class="card-body">
                             <p class="fw-bold mb-1">
                                 Last Epoch Save Importer / Exporter
@@ -1661,12 +1622,11 @@
                                 class="card-text"
                                 eb-localization="last-epoch-desc"
                             >
-                                <b>Last Epoch</b> oyunu için geliştirilmiş bir
-                                uygulamadır. <b>C#</b> ile
-                                <b>Windows Forms</b> kullanılarak
-                                hazırlanmıştır. Registry'de yer alan save
-                                bilgilerini dışarı aktarır veya dışarı aktarılan
-                                registry bilgisinden içeri aktarım yapar.
+                                An application developed for &lt;b&gt;Last
+                                Epoch&lt;/b&gt; game using &lt;b&gt;C#&lt;/b&gt;
+                                and &lt;b&gt;Windows Forms&lt;/b&gt;. It exports
+                                the save data located in registry and imports
+                                the save data using exported registry data.
                             </p>
                         </div>
                         <div
@@ -1685,20 +1645,18 @@
                         </div>
                     </div>
                 </div>
-
                 <div
                     class="col portfolio-item html-css javascript chrome-extension"
                 >
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Javascript Code Executor Chrome Extension Demo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/ext1.png"
                             width="100%"
-                            height="255"
-                            alt="Javascript Code Executor Chrome Extension Demo"
                         />
-
                         <div class="card-body">
                             <p class="fw-bold mb-1">Javascript Code Executor</p>
                             <ul
@@ -1708,37 +1666,34 @@
                                 class="card-text"
                                 eb-localization="js-code-executor-desc"
                             >
-                                Bu proje <b>Google Chrome</b>'a eklenti olacak
-                                şekilde <b>HTML</b>, <b>CSS</b> ve
-                                <b>Javascript</b> kullanılarak yazılmıştır. Bu
-                                eklentinin amacı istenilen sayfada yer alan bir
-                                element üzerinde gerçekleşen spesifik bir
-                                eventte kendi istediğimiz
-                                <b>Javascript</b> kodlarını çalıştırmasıdır.
+                                An extension I have written for &lt;b&gt;Google
+                                Chrome&lt;/b&gt; using &lt;b&gt;HTML&lt;/b&gt;,
+                                &lt;b&gt;CSS&lt;/b&gt; and
+                                &lt;b&gt;Javascript&lt;/b&gt;. Purpose of this
+                                extension is to execute arbitrary code when
+                                specific events occur on specific elements.
                             </p>
                         </div>
                     </div>
                 </div>
-
                 <div
                     class="col portfolio-item html-css javascript chrome-extension"
                 >
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="English / Japanese Translator Chrome Extension Demo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/ext2.jpg"
                             width="100%"
-                            height="255"
-                            alt="English / Japanese Translator Chrome Extension Demo"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="english-japanese-translate-title"
                             >
-                                İngilizce / Japonca Çeviri
+                                English / Japanese Translate
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1747,15 +1702,16 @@
                                 class="card-text"
                                 eb-localization="english-japanese-translate-desc"
                             >
-                                Bu proje <b>Google Chrome</b>'a eklenti olacak
-                                şekilde <b>HTML</b>, <b>CSS</b> ve
-                                <b>Javascript</b> kullanılarak yazılmıştır. Bu
-                                eklentinin amacı istenilen sayfada herhangi bir
-                                Japonca kelimenin taranılarak eklenti sayesinde
-                                İngilizce karşılığının kolayca gösterilmesini
-                                sağlamaktır. Ayrıca browserın eklenti barından
-                                da direk İngilizce bir kelime aranıp bulunan
-                                Japonca kelime sonuçları listelenmektedir.
+                                An extension I have written for &lt;b&gt;Google
+                                Chrome&lt;/b&gt; using &lt;b&gt;HTML&lt;/b&gt;,
+                                &lt;b&gt;CSS&lt;/b&gt; and
+                                &lt;b&gt;Javascript&lt;/b&gt;. Purpose of this
+                                extension is to easily get the translation of a
+                                japanese word by just selecting it. One can also
+                                perform a word search by clicking to the
+                                extension icon and writing the japanese word
+                                they want to search. Then the results will be
+                                listed below.
                             </p>
                         </div>
                         <div
@@ -1768,32 +1724,28 @@
                                     target="_blank"
                                 >
                                     <i class="fa-solid fa-eye"></i>
-                                    <span eb-localization="view-btn"
-                                        >Görüntüle</span
-                                    >
+                                    <span eb-localization="view-btn">View</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item javascript chrome-extension">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Panic Button Chrome Extension Demo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/panic.png"
                             width="100%"
-                            height="255"
-                            alt="Panic Button Chrome Extension Demo"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="close-open-tabs-title"
                             >
-                                Açık Sekmeleri Kapatma
+                                Close All Open Tabs
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1802,41 +1754,39 @@
                                 class="card-text"
                                 eb-localization="close-open-tabs-desc"
                             >
-                                Bu proje <b>Google Chrome</b>'a eklenti olacak
-                                şekilde <b>Javascript</b>
-                                kullanılarak yazılmıştır. Bu eklentinin amacı
-                                tarayıcı üzerinde bulunan eklenti simgesine ilk
-                                kez basıldığında aktif olan bütün sekmeleri
-                                kapatıp tekrar basıldığında bu kapatılan
-                                sekmeleri tekrar açmasıdır.
+                                An extension I have written for &lt;b&gt;Google
+                                Chrome&lt;/b&gt; using
+                                &lt;b&gt;Javascript&lt;/b&gt;. Purpose of this
+                                extension is to close all the open tabs when
+                                user clicks to the extension icon for the first
+                                time and when clicked for the second time,
+                                restore the all closed tabs.
                             </p>
                             <small
                                 class="text-muted"
                                 eb-localization="freelance-work-desc"
-                                >Freelance bir iş olarak yapıldığı için kaynak
-                                kodu bulunmamaktadır.</small
+                                >No source code available for this project as it
+                                has been done as freelance work.</small
                             >
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item php html-css cordova">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Android Application UI"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/mangaku.jpg"
                             width="100%"
-                            height="255"
-                            alt="Android Application UI"
                         />
-
                         <div class="card-body">
                             <p
                                 class="fw-bold mb-1"
                                 eb-localization="manga-app-title"
                             >
-                                Çizgi Roman Okuma Uygulaması
+                                Manga Reading Application
                             </p>
                             <ul
                                 class="list-group list-group-horizontal custom-list portfolio-category-list"
@@ -1845,12 +1795,12 @@
                                 class="card-text"
                                 eb-localization="manga-app-desc"
                             >
-                                <b>Cordova</b> kullanılarak <b>Android</b> için
-                                geliştirilmiş bir manga (çizgi roman) okuma
-                                uygulamasıdır. <b>PHP</b> ile kullanıcı
-                                istekleri için API yazılmış olup otomatik olarak
-                                çizgi romanları güncelleyecek bazı cronjob
-                                scriptleri de bulunmaktadır.
+                                A manga reading app developed for
+                                &lt;b&gt;Android&lt;/b&gt; using
+                                &lt;b&gt;Cordova&lt;/b&gt;. For user requests, I
+                                wrote a &lt;b&gt;PHP&lt;/b&gt; based API. And to
+                                automate the manga updates, I did write several
+                                &lt;b&gt;PHP&lt;/b&gt; cronjob scripts.
                             </p>
                         </div>
                         <div
@@ -1869,18 +1819,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item html-css cordova">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Finger the Balloons Game Demo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/ftb.png"
                             width="100%"
-                            height="255"
-                            alt="Finger the Balloons Game Demo"
                         />
-
                         <div class="card-body">
                             <p class="fw-bold mb-1">Finger The Balloons</p>
                             <ul
@@ -1890,13 +1838,13 @@
                                 class="card-text"
                                 eb-localization="finger-the-balloons-desc"
                             >
-                                <b>Cordova</b> kullanılarak <b>Android</b> için
-                                geliştirilmiş bir oyun uygulamasıdır. Bu
-                                uygulamayı geliştirmemdeki temel amacım
-                                <b>HTML5 canvas</b>ının bir
-                                <b>webview uygulaması</b>nda ne kadar
-                                performanslı ve hassas (dokunma işlemi için)
-                                çalıştığını görmekti.
+                                A game application developed for
+                                &lt;b&gt;Android&lt;/b&gt; using
+                                &lt;b&gt;Cordova&lt;/b&gt;. My main purpose for
+                                developing this application was to observe the
+                                performance of &lt;b&gt;HTML5 canvas&lt;/b&gt;
+                                in a &lt;b&gt;webview application&lt;/b&gt; and
+                                touch point detection accuracy.
                             </p>
                         </div>
                         <div
@@ -1915,18 +1863,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item python">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Python Logo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/python.png"
                             width="100%"
-                            height="255"
-                            alt="Python Logo"
                         />
-
                         <div class="card-body">
                             <p class="fw-bold mb-1">Websocket Server</p>
                             <ul
@@ -1936,9 +1882,8 @@
                                 class="card-text"
                                 eb-localization="websocket-python-server-desc"
                             >
-                                <b>RFC6455 Websocket Protokolü</b> için
-                                <b>Python</b> ile yazmış olduğum bir server
-                                kütüphanesidir.
+                                &lt;b&gt;Python&lt;/b&gt; server library for the
+                                &lt;b&gt;RFC6455 Websocket Protocol&lt;/b&gt;.
                             </p>
                         </div>
                         <div
@@ -1957,18 +1902,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item lua game-mod">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Mod Logo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/mod.jpg"
                             width="100%"
-                            height="255"
-                            alt="Mod Logo"
                         />
-
                         <div class="card-body">
                             <p class="fw-bold mb-1">
                                 Project Zomboid - ReviveMP
@@ -1980,8 +1923,8 @@
                                 class="card-text"
                                 eb-localization="project-zomboid-mod-desc"
                             >
-                                <b>Project Zomboid</b> oyunu için <b>Lua</b> ile
-                                geliştirmiş olduğum bir moddur.
+                                A mod I created using &lt;b&gt;Lua&lt;/b&gt; for
+                                &lt;b&gt;Project Zomboid&lt;/b&gt; game.
                             </p>
                         </div>
                         <div
@@ -2000,18 +1943,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item lua game-mod">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Mod Logo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/mod.jpg"
                             width="100%"
-                            height="255"
-                            alt="Mod Logo"
                         />
-
                         <div class="card-body">
                             <p class="fw-bold mb-1">
                                 Project Zomboid - ReviveMP Add-on - Permanent
@@ -2024,8 +1965,8 @@
                                 class="card-text"
                                 eb-localization="project-zomboid-mod-desc"
                             >
-                                <b>Project Zomboid</b> oyunu için <b>Lua</b> ile
-                                geliştirmiş olduğum bir moddur.
+                                A mod I created using &lt;b&gt;Lua&lt;/b&gt; for
+                                &lt;b&gt;Project Zomboid&lt;/b&gt; game.
                             </p>
                         </div>
                         <div
@@ -2044,18 +1985,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item lua game-mod">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Mod Logo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/mod.jpg"
                             width="100%"
-                            height="255"
-                            alt="Mod Logo"
                         />
-
                         <div class="card-body">
                             <p class="fw-bold mb-1">
                                 Project Zomboid - Save It To Server!
@@ -2067,8 +2006,8 @@
                                 class="card-text"
                                 eb-localization="project-zomboid-mod-desc"
                             >
-                                <b>Project Zomboid</b> oyunu için <b>Lua</b> ile
-                                geliştirmiş olduğum bir moddur.
+                                A mod I created using &lt;b&gt;Lua&lt;/b&gt; for
+                                &lt;b&gt;Project Zomboid&lt;/b&gt; game.
                             </p>
                         </div>
                         <div
@@ -2087,18 +2026,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col portfolio-item lua game-mod">
                     <div class="card shadow-sm h-100">
                         <img
-                            loading="lazy"
+                            alt="Mod Logo"
                             class="card-img-top"
+                            height="255"
+                            loading="lazy"
                             src="img/mod.jpg"
                             width="100%"
-                            height="255"
-                            alt="Mod Logo"
                         />
-
                         <div class="card-body">
                             <p class="fw-bold mb-1">
                                 Project Zomboid - Send Over!
@@ -2110,8 +2047,8 @@
                                 class="card-text"
                                 eb-localization="project-zomboid-mod-desc"
                             >
-                                <b>Project Zomboid</b> oyunu için <b>Lua</b> ile
-                                geliştirmiş olduğum bir moddur.
+                                A mod I created using &lt;b&gt;Lua&lt;/b&gt; for
+                                &lt;b&gt;Project Zomboid&lt;/b&gt; game.
                             </p>
                         </div>
                         <div
@@ -2132,25 +2069,22 @@
                 </div>
             </div>
             <!-- end portfolio-item-list -->
-
             <!-- <footer class="px-5 pb-3 text-center"></footer> -->
         </div>
-
         <script src="js/bootstrap.min.js"></script>
         <script src="js/fontawesome.min.js"></script>
         <script src="js/mixitup.min.js"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/img_box.js"></script>
         <script src="js/eb_localization.js"></script>
-
         <script>
             let localizationUseHTML = true;
-            let localization = new EB_Localization("tr", localizationUseHTML);
+            let localization = new EB_Localization("en", localizationUseHTML);
 
             $(window).on("load", function () {
                 localization.loadLocalizationFromURL(
-                    "translations/en.json",
-                    "en"
+                    "translations/tr.json",
+                    "tr"
                 );
                 localization.localize();
 

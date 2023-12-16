@@ -93,7 +93,9 @@ class EB_Localization
 
         if(this._getLocalization(this.selectedLanguage) === undefined)
         {
-            console.error("EB_Localization.localize() - No localization found for \""+this.selectedLanguage+"\"!");
+            if(this.selectedLanguage !== undefined)
+                console.error("EB_Localization.localize() - No localization found for \""+this.selectedLanguage+"\"!");
+            
             return;
         }
 
