@@ -48,7 +48,8 @@
                 <div class="col-lg-6">
                     <h1 class="fw-bold lh-1 mb-3">
                         <span eb-localization="title-1"
-                            >Hello, I am <strong>Ege Bilecen</strong>, and I am a</span
+                            >Hello, I am <strong>Ege Bilecen</strong>, and I am
+                            a</span
                         >
                         <span
                             eb-localization="title-2"
@@ -327,23 +328,25 @@
                                 eb-localization="image-proc-circle-desc"
                             >
                                 This is a wrapper I did write for
-                                <strong>TEKNOFEST International Unmanned Aerial
-                                Vehicles - Drone Category</strong> 2020
-                                competition's second task. This wrapper works in
-                                two steps. First, a filtering is done using HSV
-                                color range of desired color in HSV color space.
-                                Then extracting the contour areas and their
-                                details such as area position, size, etc. After
-                                this; based on distance of contour area center
-                                points, their mean values will be calculated and
-                                will be combined into single point. This point
-                                represents the point of interest that will be
-                                cropped from original frame using some arbitrary
-                                dimension and will be given into
-                                <strong>HoughCircles</strong> circle detection
-                                function of OpenCV as a parameter. The main
-                                reason for cropping the point of interest from
-                                the original frame using some arbitrary
+                                <strong
+                                    >TEKNOFEST International Unmanned Aerial
+                                    Vehicles - Drone Category</strong
+                                >
+                                2020 competition's second task. This wrapper
+                                works in two steps. First, a filtering is done
+                                using HSV color range of desired color in HSV
+                                color space. Then extracting the contour areas
+                                and their details such as area position, size,
+                                etc. After this; based on distance of contour
+                                area center points, their mean values will be
+                                calculated and will be combined into single
+                                point. This point represents the point of
+                                interest that will be cropped from original
+                                frame using some arbitrary dimension and will be
+                                given into <strong>HoughCircles</strong> circle
+                                detection function of OpenCV as a parameter. The
+                                main reason for cropping the point of interest
+                                from the original frame using some arbitrary
                                 dimension is, applying
                                 <strong>HoughCircles</strong> circle detection
                                 method on original frame would be much more
@@ -405,32 +408,33 @@
                                 In this project, a mesh network has been created
                                 for published data from several sensors that are
                                 placed separately from each other in order to
-                                reach the <strong>System on Chip</strong>
-                                system in the house that is acting as a server.
-                                These sensor data will then be published to the
-                                mobile application that is connected to the
-                                server via <strong>Websocket</strong>. I
-                                choosed <strong>Raspberry PI 3</strong> as
+                                reach the <strong>System on Chip</strong> system
+                                in the house that is acting as a server. These
+                                sensor data will then be published to the mobile
+                                application that is connected to the server via
+                                <strong>Websocket</strong>. I choosed
+                                <strong>Raspberry PI 3</strong> as
                                 <strong>SoC</strong> because of it's cheap
-                                price. <strong>painlessMesh</strong> library
-                                is used for creating the mesh network.
+                                price. <strong>painlessMesh</strong> library is
+                                used for creating the mesh network.
                                 <strong>NodeMCU</strong> IoT platform is used
                                 for the nodes in mesh network. Mobile
                                 application connects to the server using it's
                                 local IP address in WiFi network. Communication
                                 between root node and server is done by using
-                                <strong>ROS</strong>. Root node sends all
-                                sensor data from child nodes via <strong>ROS
-                                Serial</strong> library. Root node is connected
-                                to the server via physical cable. Reason of this
-                                is <strong>NodeMCU</strong> being unable to
-                                connect more than one WiFi network. (Meanwhile
-                                <strong>painlessMesh</strong> itself creates
-                                an access point, <strong>ROS Serial</strong>
-                                library attempts to connect to an exist WiFi
-                                network. This causes these two library to
-                                conflict with each other.) Mobile application is
-                                developed using <strong>Xamarin Forms</strong>
+                                <strong>ROS</strong>. Root node sends all sensor
+                                data from child nodes via
+                                <strong>ROS Serial</strong> library. Root node
+                                is connected to the server via physical cable.
+                                Reason of this is <strong>NodeMCU</strong> being
+                                unable to connect more than one WiFi network.
+                                (Meanwhile <strong>painlessMesh</strong> itself
+                                creates an access point,
+                                <strong>ROS Serial</strong> library attempts to
+                                connect to an exist WiFi network. This causes
+                                these two library to conflict with each other.)
+                                Mobile application is developed using
+                                <strong>Xamarin Forms</strong>
                                 to be cross-platform application.
                             </p>
                             <small
@@ -468,21 +472,21 @@
                                 eb-localization="home-automation-desc"
                             >
                                 In this project, I did use
-                                <strong>NodeMCU</strong> IoT platform to
-                                connect to the WiFi network of the house, get
-                                data from connected sensors (temperature sensor,
-                                movement detection sensor etc.) periodically and
-                                store them on my database in a hosting using a
+                                <strong>NodeMCU</strong> IoT platform to connect
+                                to the WiFi network of the house, get data from
+                                connected sensors (temperature sensor, movement
+                                detection sensor etc.) periodically and store
+                                them on my database in a hosting using a
                                 <strong>PHP</strong> based API I did write. I
                                 did also use <strong>C++</strong> for the
                                 firmware of <strong>NodeMCU</strong>. In
                                 addition, I used <strong>Cordova</strong> to
                                 create a mobile webview application for
                                 <strong>Android</strong> using
-                                <strong>HTML</strong>, <strong>CSS</strong>
-                                and <strong>Javascript</strong>. All of the
-                                sensor data can be tracked in this application.
-                                This application also allows user to extensively
+                                <strong>HTML</strong>, <strong>CSS</strong> and
+                                <strong>Javascript</strong>. All of the sensor
+                                data can be tracked in this application. This
+                                application also allows user to extensively
                                 update settings of all components. Such as
                                 updating sensor status (activated /
                                 deactivated), changing their polling rates and
@@ -496,8 +500,8 @@
                                 class="text-muted"
                                 eb-localization="home-automation-note"
                                 >Application pictures are under the
-                                "<strong>home_controller_app</strong>"
-                                directory of GitHub repo.</small
+                                "<strong>home_controller_app</strong>" directory
+                                of GitHub repo.</small
                             >
                         </div>
                         <div
@@ -700,15 +704,18 @@
                                 class="card-text"
                                 eb-localization="car-screen-design-desc"
                             >
-                                My screen design for <strong>TEKNOFEST
-                                Efficiency Challenge Electrical
-                                Vehicle</strong> 2021 competetion to satisfy
-                                competition rules using <strong>Nextion
-                                Screen</strong> (HMI Solution). I did write the
-                                communication between the microcontroller inside
-                                the car and screen using <strong>C++</strong>.
-                                Also, serial communication protocol is used
-                                through serial port.
+                                My screen design for
+                                <strong
+                                    >TEKNOFEST Efficiency Challenge Electrical
+                                    Vehicle</strong
+                                >
+                                2021 competetion to satisfy competition rules
+                                using <strong>Nextion Screen</strong> (HMI
+                                Solution). I did write the communication between
+                                the microcontroller inside the car and screen
+                                using <strong>C++</strong>. Also, serial
+                                communication protocol is used through serial
+                                port.
                             </p>
                             <small
                                 class="text-muted"
@@ -745,12 +752,12 @@
                                 eb-localization="pz-server-discord-bot-desc"
                             >
                                 A discord bot I have written for managing
-                                <strong>Project Zomboid</strong> server
-                                console remotely through discord using
+                                <strong>Project Zomboid</strong> server console
+                                remotely through discord using
                                 <strong>C#</strong> and
-                                <strong>Discord.NET</strong> library. Also,
-                                this bot adds more functionality to the server
-                                that normally aren't available such as automated
+                                <strong>Discord.NET</strong> library. Also, this
+                                bot adds more functionality to the server that
+                                normally aren't available such as automated
                                 server restarts every 6 hours, mod update
                                 detections, auto start in case of server dying,
                                 etc.
@@ -838,10 +845,11 @@
                                 automatically generate portraits from selected
                                 portrait (image) that matches with the game's
                                 portrait size rules. I did use
-                                <strong>C#</strong> and <strong>Windows
-                                Forms</strong> for this application. It also
-                                features cropping based on portrait size (This
-                                game has four different portrait sizes).
+                                <strong>C#</strong> and
+                                <strong>Windows Forms</strong> for this
+                                application. It also features cropping based on
+                                portrait size (This game has four different
+                                portrait sizes).
                             </p>
                         </div>
                         <div
@@ -885,12 +893,12 @@
                                 eb-localization="2d-drone-simulation-desc"
                             >
                                 In this project, I did use
-                                <strong>HTML</strong>, <strong>CSS</strong>
-                                and <strong>Javascript</strong> to simulate
-                                swarm movement. At the time being, only 3
-                                formations are available: Line, V and Circle.
-                                The algorithm for preventing drone to drone
-                                collisions aren't implemented yet.
+                                <strong>HTML</strong>, <strong>CSS</strong> and
+                                <strong>Javascript</strong> to simulate swarm
+                                movement. At the time being, only 3 formations
+                                are available: Line, V and Circle. The algorithm
+                                for preventing drone to drone collisions aren't
+                                implemented yet.
                             </p>
                             <small
                                 class="text-muted"
@@ -988,10 +996,10 @@
                                 In this 2D browser based multiplayer game
                                 project, I did use <strong>HTML</strong>,
                                 <strong>CSS</strong> and
-                                <strong>Javascript</strong> for the client
-                                side and <strong>NodeJS</strong> for the
-                                server side. Communication between client and
-                                server done using websockets. I did use
+                                <strong>Javascript</strong> for the client side
+                                and <strong>NodeJS</strong> for the server side.
+                                Communication between client and server done
+                                using websockets. I did use
                                 <strong>Socket.IO</strong> library for this.
                                 Also character data stored on a
                                 <strong>MongoDB</strong> database.
@@ -1283,10 +1291,9 @@
                                 listed under product categories from
                                 sahibinden.com into excel using
                                 <strong>Python</strong> and
-                                <strong>PyQT</strong>. Data mining is done
-                                with using <strong>Selenium</strong>. It also
-                                changes the IP using proxy in specified
-                                intervals.
+                                <strong>PyQT</strong>. Data mining is done with
+                                using <strong>Selenium</strong>. It also changes
+                                the IP using proxy in specified intervals.
                             </p>
                             <small
                                 class="text-muted"
@@ -1323,8 +1330,8 @@
                                 listed under product categories from
                                 sahibinden.com into excel using
                                 <strong>Python</strong> and
-                                <strong>PyQT</strong>. Data mining is done
-                                with using <strong>Selenium</strong>.
+                                <strong>PyQT</strong>. Data mining is done with
+                                using <strong>Selenium</strong>.
                             </p>
                             <small
                                 class="text-muted"
@@ -1361,8 +1368,8 @@
                                 listed under product categories from
                                 sahibinden.com into excel using
                                 <strong>Python</strong> and
-                                <strong>PyQT</strong>. Data mining is done
-                                with using <strong>Selenium</strong>.
+                                <strong>PyQT</strong>. Data mining is done with
+                                using <strong>Selenium</strong>.
                             </p>
                             <small
                                 class="text-muted"
@@ -1507,8 +1514,8 @@
                             >
                                 An application developed for sending messages
                                 from a pre-prepared account list to a twitch
-                                channel's chat using <strong>Python</strong>
-                                and <strong>PyQT</strong>.
+                                channel's chat using <strong>Python</strong> and
+                                <strong>PyQT</strong>.
                             </p>
                             <small
                                 class="text-muted"
@@ -1581,9 +1588,9 @@
                                 eb-localization="grocery-expense-tracker-desc"
                             >
                                 An application developed using
-                                <strong>C#</strong> and <strong>Windows
-                                Forms</strong> for tracking daily grocery
-                                expenses.
+                                <strong>C#</strong> and
+                                <strong>Windows Forms</strong> for tracking
+                                daily grocery expenses.
                             </p>
                         </div>
                         <div
@@ -1623,11 +1630,12 @@
                                 class="card-text"
                                 eb-localization="last-epoch-desc"
                             >
-                                An application developed for <strong>Last
-                                Epoch</strong> game using <strong>C#</strong>
-                                and <strong>Windows Forms</strong>. It exports
-                                the save data located in registry and imports
-                                the save data using exported registry data.
+                                An application developed for
+                                <strong>Last Epoch</strong> game using
+                                <strong>C#</strong> and
+                                <strong>Windows Forms</strong>. It exports the
+                                save data located in registry and imports the
+                                save data using exported registry data.
                             </p>
                         </div>
                         <div
@@ -1667,9 +1675,9 @@
                                 class="card-text"
                                 eb-localization="js-code-executor-desc"
                             >
-                                An extension I have written for <strong>Google
-                                Chrome</strong> using <strong>HTML</strong>,
-                                <strong>CSS</strong> and
+                                An extension I have written for
+                                <strong>Google Chrome</strong> using
+                                <strong>HTML</strong>, <strong>CSS</strong> and
                                 <strong>Javascript</strong>. Purpose of this
                                 extension is to execute arbitrary code when
                                 specific events occur on specific elements.
@@ -1703,9 +1711,9 @@
                                 class="card-text"
                                 eb-localization="english-japanese-translate-desc"
                             >
-                                An extension I have written for <strong>Google
-                                Chrome</strong> using <strong>HTML</strong>,
-                                <strong>CSS</strong> and
+                                An extension I have written for
+                                <strong>Google Chrome</strong> using
+                                <strong>HTML</strong>, <strong>CSS</strong> and
                                 <strong>Javascript</strong>. Purpose of this
                                 extension is to easily get the translation of a
                                 japanese word by just selecting it. One can also
@@ -1755,8 +1763,8 @@
                                 class="card-text"
                                 eb-localization="close-open-tabs-desc"
                             >
-                                An extension I have written for <strong>Google
-                                Chrome</strong> using
+                                An extension I have written for
+                                <strong>Google Chrome</strong> using
                                 <strong>Javascript</strong>. Purpose of this
                                 extension is to close all the open tabs when
                                 user clicks to the extension icon for the first
@@ -1843,9 +1851,9 @@
                                 <strong>Android</strong> using
                                 <strong>Cordova</strong>. My main purpose for
                                 developing this application was to observe the
-                                performance of <strong>HTML5 canvas</strong>
-                                in a <strong>webview application</strong> and
-                                touch point detection accuracy.
+                                performance of <strong>HTML5 canvas</strong> in
+                                a <strong>webview application</strong> and touch
+                                point detection accuracy.
                             </p>
                         </div>
                         <div
