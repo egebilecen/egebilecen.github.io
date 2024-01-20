@@ -23,6 +23,10 @@ body {
     background: url("../img/loader6.gif") 50% 50% no-repeat #18181f;
 }
 
+p {
+    text-align: justify;
+}
+
 ul.custom-list > li {
     border: none;
     margin-right: 10px;
