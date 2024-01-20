@@ -232,6 +232,259 @@
             <div
                 class="portfolio-item-list row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 px-5 pb-3"
             >
+                <div class="col portfolio-item cs xamarin-forms ros automation">
+                    <div class="card shadow-sm h-100">
+                        <img
+                            alt="Mesh Network System Overview"
+                            class="card-img-top"
+                            height="255"
+                            loading="lazy"
+                            src="img/mesh.png"
+                            width="100%"
+                        />
+                        <div class="card-body">
+                            <p
+                                class="fw-bold mb-1"
+                                eb-localization="mesh-network-home-title"
+                            >
+                                Home Automation with Mesh Network
+                            </p>
+                            <ul
+                                class="list-group list-group-horizontal custom-list portfolio-category-list"
+                            ></ul>
+                            <p
+                                class="card-text"
+                                eb-localization="mesh-network-home-desc"
+                            >
+                                In this project, a mesh network has been created
+                                for published data from several sensors that are
+                                placed separately from each other in order to
+                                reach the <strong>System on Chip</strong> system
+                                in the house that is acting as a server. These
+                                sensor data will then be published to the mobile
+                                application that is connected to the server via
+                                <strong>Websocket</strong>. I choosed
+                                <strong>Raspberry PI 3</strong> as
+                                <strong>SoC</strong> because of it's cheap
+                                price. <strong>painlessMesh</strong> library is
+                                used for creating the mesh network.
+                                <strong>NodeMCU</strong> IoT platform is used
+                                for the nodes in mesh network. Mobile
+                                application connects to the server using it's
+                                local IP address in WiFi network. Communication
+                                between root node and server is done by using
+                                <strong>ROS</strong>. Root node sends all sensor
+                                data from child nodes via
+                                <strong>ROS Serial</strong> library. Root node
+                                is connected to the server via physical cable.
+                                Reason of this is <strong>NodeMCU</strong> being
+                                unable to connect more than one WiFi network.
+                                (Meanwhile <strong>painlessMesh</strong> itself
+                                creates an access point,
+                                <strong>ROS Serial</strong> library attempts to
+                                connect to an exist WiFi network. This causes
+                                these two library to conflict with each other.)
+                                Mobile application is developed using
+                                <strong>Xamarin Forms</strong>
+                                to be cross-platform application.
+                            </p>
+                            <small
+                                class="text-muted"
+                                eb-localization="mesh-network-home-note"
+                                >No source code available for this project as it
+                                has been done as assignment in my
+                                collage.</small
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col portfolio-item cpp html-css cordova automation">
+                    <div class="card shadow-sm h-100">
+                        <img
+                            alt="House Automation Application Interface"
+                            class="card-img-top"
+                            height="255"
+                            loading="lazy"
+                            src="img/eb.png"
+                            width="100%"
+                        />
+                        <div class="card-body">
+                            <p
+                                class="fw-bold mb-1"
+                                eb-localization="home-automation-title"
+                            >
+                                Home Automation
+                            </p>
+                            <ul
+                                class="list-group list-group-horizontal custom-list portfolio-category-list"
+                            ></ul>
+                            <p
+                                class="card-text"
+                                eb-localization="home-automation-desc"
+                            >
+                                In this project, I did use
+                                <strong>NodeMCU</strong> IoT platform to connect
+                                to the WiFi network of the house, get data from
+                                connected sensors (temperature sensor, movement
+                                detection sensor etc.) periodically and store
+                                them on my database in a hosting using a
+                                <strong>PHP</strong> based API I did write. I
+                                did also use <strong>C++</strong> for the
+                                firmware of <strong>NodeMCU</strong>. In
+                                addition, I used <strong>Cordova</strong> to
+                                create a mobile webview application for
+                                <strong>Android</strong> using
+                                <strong>HTML</strong>, <strong>CSS</strong> and
+                                <strong>Javascript</strong>. All of the sensor
+                                data can be tracked in this application. This
+                                application also allows user to extensively
+                                update settings of all components. Such as
+                                updating sensor status (activated /
+                                deactivated), changing their polling rates and
+                                even adding sleep time (this can be useful to
+                                prevent notification spam for sensors like
+                                movement detection sensor as
+                                <strong>NodeMCU</strong> sends notification to
+                                the application every time sensor is triggered).
+                            </p>
+                            <small
+                                class="text-muted"
+                                eb-localization="home-automation-note"
+                                >Application pictures are under the
+                                "<strong>home_controller_app</strong>" directory
+                                of GitHub repo.</small
+                            >
+                        </div>
+                        <div
+                            style="position: relative; left: 15px; bottom: 12px"
+                        >
+                            <div class="btn-group">
+                                <a
+                                    class="btn btn-sm btn-outline-secondary btn-portfolio-view"
+                                    href="https://github.com/egebilecen/eb-home-automation"
+                                    target="_blank"
+                                >
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col portfolio-item rust tauri react html-css javascript"
+                >
+                    <div class="card shadow-sm h-100">
+                        <div
+                            class="carousel slide"
+                            data-bs-ride="carousel"
+                            id="arelithCombatSimulator"
+                        >
+                            <div class="carousel-indicators">
+                                <button
+                                    aria-current="true"
+                                    aria-label="Slide 1"
+                                    class="active"
+                                    data-bs-slide-to="0"
+                                    data-bs-target="#arelithCombatSimulator"
+                                    type="button"
+                                ></button>
+                                <button
+                                    aria-label="Slide 2"
+                                    data-bs-slide-to="1"
+                                    data-bs-target="#arelithCombatSimulator"
+                                    type="button"
+                                ></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        alt="Arelith Combat Simulator Demo"
+                                        height="255"
+                                        loading="lazy"
+                                        src="img/are_combat_sim_1.png"
+                                        width="100%"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        alt="Arelith Combat Simulator Demo"
+                                        height="255"
+                                        loading="lazy"
+                                        src="img/are_combat_sim_2.png"
+                                        width="100%"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                data-bs-slide="prev"
+                                data-bs-target="#arelithCombatSimulator"
+                                type="button"
+                            >
+                                <span
+                                    aria-hidden="true"
+                                    class="carousel-control-prev-icon"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                data-bs-slide="next"
+                                data-bs-target="#arelithCombatSimulator"
+                                type="button"
+                            >
+                                <span
+                                    aria-hidden="true"
+                                    class="carousel-control-next-icon"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <p
+                                class="fw-bold mb-1"
+                                eb-localization="are-combat-sim-title"
+                            >
+                                Arelith Combat Simulator
+                            </p>
+                            <ul
+                                class="list-group list-group-horizontal custom-list portfolio-category-list"
+                            ></ul>
+                            <p
+                                class="card-text"
+                                eb-localization="are-combat-sim-desc"
+                            >
+                                In this project, I created a combat simulator
+                                for the <b>Neverwinter Nights</b> game, which is
+                                based on the <b>Dungeons & Dragons</b> tabletop
+                                game. <b>Arelith</b> is a persistent
+                                role-playing server with new mechanics added on
+                                top of the base game, which is what this
+                                simulator is mainly based on. The project is
+                                based on <b>Tauri</b> and uses <b>React</b> for
+                                the user interface, with the utilization of
+                                <b>Ant Design</b> UI components. To display
+                                interactive charts, the <b>ECharts</b> library
+                                is used.
+                            </p>
+                        </div>
+                        <div
+                            style="position: relative; left: 15px; bottom: 12px"
+                        >
+                            <div class="btn-group">
+                                <a
+                                    class="btn btn-sm btn-outline-secondary btn-portfolio-view"
+                                    href="https://github.com/egebilecen/arelith-combat-simulator-gui"
+                                    target="_blank"
+                                >
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col portfolio-item python image-processing">
                     <div class="card shadow-sm h-100">
                         <div
@@ -372,145 +625,6 @@
                                 <a
                                     class="btn btn-sm btn-outline-secondary btn-portfolio-view"
                                     href="https://github.com/egebilecen/eb-python/blob/master/eb/image_processing/detection.py#L86"
-                                    target="_blank"
-                                >
-                                    <i class="fa-brands fa-github"></i>
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col portfolio-item cs xamarin-forms ros automation">
-                    <div class="card shadow-sm h-100">
-                        <img
-                            alt="Mesh Network System Overview"
-                            class="card-img-top"
-                            height="255"
-                            loading="lazy"
-                            src="img/mesh.png"
-                            width="100%"
-                        />
-                        <div class="card-body">
-                            <p
-                                class="fw-bold mb-1"
-                                eb-localization="mesh-network-home-title"
-                            >
-                                Home Automation with Mesh Network
-                            </p>
-                            <ul
-                                class="list-group list-group-horizontal custom-list portfolio-category-list"
-                            ></ul>
-                            <p
-                                class="card-text"
-                                eb-localization="mesh-network-home-desc"
-                            >
-                                In this project, a mesh network has been created
-                                for published data from several sensors that are
-                                placed separately from each other in order to
-                                reach the <strong>System on Chip</strong> system
-                                in the house that is acting as a server. These
-                                sensor data will then be published to the mobile
-                                application that is connected to the server via
-                                <strong>Websocket</strong>. I choosed
-                                <strong>Raspberry PI 3</strong> as
-                                <strong>SoC</strong> because of it's cheap
-                                price. <strong>painlessMesh</strong> library is
-                                used for creating the mesh network.
-                                <strong>NodeMCU</strong> IoT platform is used
-                                for the nodes in mesh network. Mobile
-                                application connects to the server using it's
-                                local IP address in WiFi network. Communication
-                                between root node and server is done by using
-                                <strong>ROS</strong>. Root node sends all sensor
-                                data from child nodes via
-                                <strong>ROS Serial</strong> library. Root node
-                                is connected to the server via physical cable.
-                                Reason of this is <strong>NodeMCU</strong> being
-                                unable to connect more than one WiFi network.
-                                (Meanwhile <strong>painlessMesh</strong> itself
-                                creates an access point,
-                                <strong>ROS Serial</strong> library attempts to
-                                connect to an exist WiFi network. This causes
-                                these two library to conflict with each other.)
-                                Mobile application is developed using
-                                <strong>Xamarin Forms</strong>
-                                to be cross-platform application.
-                            </p>
-                            <small
-                                class="text-muted"
-                                eb-localization="mesh-network-home-note"
-                                >No source code available for this project as it
-                                has been done as assignment in my
-                                collage.</small
-                            >
-                        </div>
-                    </div>
-                </div>
-                <div class="col portfolio-item cpp html-css cordova automation">
-                    <div class="card shadow-sm h-100">
-                        <img
-                            alt="House Automation Application Interface"
-                            class="card-img-top"
-                            height="255"
-                            loading="lazy"
-                            src="img/eb.png"
-                            width="100%"
-                        />
-                        <div class="card-body">
-                            <p
-                                class="fw-bold mb-1"
-                                eb-localization="home-automation-title"
-                            >
-                                Home Automation
-                            </p>
-                            <ul
-                                class="list-group list-group-horizontal custom-list portfolio-category-list"
-                            ></ul>
-                            <p
-                                class="card-text"
-                                eb-localization="home-automation-desc"
-                            >
-                                In this project, I did use
-                                <strong>NodeMCU</strong> IoT platform to connect
-                                to the WiFi network of the house, get data from
-                                connected sensors (temperature sensor, movement
-                                detection sensor etc.) periodically and store
-                                them on my database in a hosting using a
-                                <strong>PHP</strong> based API I did write. I
-                                did also use <strong>C++</strong> for the
-                                firmware of <strong>NodeMCU</strong>. In
-                                addition, I used <strong>Cordova</strong> to
-                                create a mobile webview application for
-                                <strong>Android</strong> using
-                                <strong>HTML</strong>, <strong>CSS</strong> and
-                                <strong>Javascript</strong>. All of the sensor
-                                data can be tracked in this application. This
-                                application also allows user to extensively
-                                update settings of all components. Such as
-                                updating sensor status (activated /
-                                deactivated), changing their polling rates and
-                                even adding sleep time (this can be useful to
-                                prevent notification spam for sensors like
-                                movement detection sensor as
-                                <strong>NodeMCU</strong> sends notification to
-                                the application every time sensor is triggered).
-                            </p>
-                            <small
-                                class="text-muted"
-                                eb-localization="home-automation-note"
-                                >Application pictures are under the
-                                "<strong>home_controller_app</strong>" directory
-                                of GitHub repo.</small
-                            >
-                        </div>
-                        <div
-                            style="position: relative; left: 15px; bottom: 12px"
-                        >
-                            <div class="btn-group">
-                                <a
-                                    class="btn btn-sm btn-outline-secondary btn-portfolio-view"
-                                    href="https://github.com/egebilecen/eb-home-automation"
                                     target="_blank"
                                 >
                                     <i class="fa-brands fa-github"></i>

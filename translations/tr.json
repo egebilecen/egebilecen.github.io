@@ -74,5 +74,7 @@
     "manga-app-desc": "<strong>Cordova</strong> kullanılarak <strong>Android</strong> için geliştirilmiş bir manga (çizgi roman) okuma uygulamasıdır. <strong>PHP</strong> ile kullanıcı istekleri için API yazılmış olup otomatik olarak çizgi romanları güncelleyecek bazı cronjob scriptleri de bulunmaktadır.",
     "finger-the-balloons-desc": "<strong>Cordova</strong> kullanılarak <strong>Android</strong> için geliştirilmiş bir oyun uygulamasıdır. Bu uygulamayı geliştirmemdeki temel amacım <strong>HTML5 canvas</strong>ının bir <strong>webview uygulaması</strong>nda ne kadar performanslı ve hassas (dokunma işlemi için) çalıştığını görmekti.",
     "websocket-python-server-desc": "<strong>RFC6455 Websocket Protokolü</strong> için <strong>Python</strong> ile yazmış olduğum bir server kütüphanesidir.",
-    "project-zomboid-mod-desc": "<strong>Project Zomboid</strong> oyunu için <strong>Lua</strong> ile geliştirmiş olduğum bir moddur."
+    "project-zomboid-mod-desc": "<strong>Project Zomboid</strong> oyunu için <strong>Lua</strong> ile geliştirmiş olduğum bir moddur.",
+    "are-combat-sim-title": "Arelith Savaş Simülatörü",
+    "are-combat-sim-desc": "Bu projede, <b>Dungeons & Dragons</b> masaüstü oyununu temel alan Neverwinter Nights oyunu için bir savaş simülatörü oluşturdum. <b>Arelith</b>, temel oyunun üzerine yeni mekanikler ekleyen bir rol yapma sunucusu ve bu simülatör de bu yeni mekanikleri esas almakta. Proje, <b>Tauri</b> frameworkünü kullanarak bir masaüstü programı oluşturuyor. Ek olarak, kullanıcı arayüzü için <b>React</b> ve <b>Ant Design</b> UI bileşenlerini kullanıyor. Etkileşimli grafikleri oluşturmak içinse <b>ECharts</b> kütüphanesi kullanıyor."
 }
