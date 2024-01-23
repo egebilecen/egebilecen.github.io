@@ -20,7 +20,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url("../img/loader6.gif") 50% 50% no-repeat #18181f;
+    background: url("../img/loader.svg") 50% 50% no-repeat #18181f;
 }
 
 p {
