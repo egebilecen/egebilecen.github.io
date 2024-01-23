@@ -27,6 +27,10 @@ p {
     text-align: justify;
 }
 
+.card-body > p:first-child {
+    text-align: initial;
+}
+
 ul.custom-list > li {
     border: none;
     margin-right: 10px;
