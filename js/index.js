@@ -1,3 +1,98 @@
+function addWorkItem(workItem) {
+    let imageHtml =
+        workItem.media.length == 0
+            ? ""
+            : workItem.media.length === 1
+            ? `
+        <img
+            alt="${workItem.media[0].alt}"
+            class="card-img-top"
+            height="255"
+            loading="lazy"
+            src="${workItem.media[0].url}"
+            width="100%"
+        />
+    `
+            : `
+        <div class="carousel slide" data-bs-ride="carousel" id="{{id}}">
+            <div class="carousel-indicators">
+                <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#{{id}}" type="button" aria-current="true"></button>
+                <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#{{id}}" type="button" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img alt="Arelith Combat Simulator Demo" height="255" loading="lazy" src="img/are_combat_sim_1.png" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img alt="Arelith Combat Simulator Demo" height="255" loading="lazy" src="img/are_combat_sim_2.png" width="100%">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#{{id}}" type="button">
+                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#{{id}}" type="button">
+                <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    `;
+
+    const footerHtml =
+        workItem.footer !== null
+            ? `
+        <small class="text-muted" eb-localization="${workItem.footer.localizationKey}">
+            ${workItem.footer.text}
+        </small>
+    `
+            : "";
+
+    const buttonHtml =
+        workItem.button === null || workItem.button.length === 0
+            ? ""
+            : workItem.button.length == 1
+            ? `
+        <div style="position: relative; left: 15px; bottom: 12px">
+            <div class="btn-group">
+                <a class="btn btn-sm btn-outline-secondary btn-portfolio-view" href="${workItem.button[0].url}" target="_blank">
+                    <i class="${workItem.button[0].icon}"></i>
+                    ${workItem.button[0].text}
+                </a>
+            </div>
+        </div>
+    `
+            : ``;
+
+    const html = `
+        <div class="col portfolio-item ${workItem.tags.join(" ")}">
+            <div class="card shadow-sm h-100">
+                ${imageHtml}
+                <div class="card-body">
+                    <p
+                        class="fw-bold mb-1"
+                        eb-localization="${workItem.title.localizationKey}"
+                    >
+                        ${workItem.title.text}
+                    </p>
+                    <ul
+                        class="list-group list-group-horizontal custom-list portfolio-category-list"
+                    ></ul>
+                    <p
+                        class="card-text"
+                        eb-localization="${workItem.desc.localizationKey}"
+                    >
+                        ${workItem.desc.text}
+                    </p>
+                    ${footerHtml}
+                </div>
+                ${buttonHtml}
+            </div>
+        </div>
+    `;
+
+    $(".portfolio-item-list").append(html);
+}
+
 let localizationUseHTML = true;
 let localization = new EB_Localization("en", localizationUseHTML);
 
@@ -25,6 +120,10 @@ $(document).on("keyup", (e) => {
 });
 
 $(() => {
+    for (let i = 0; i < WORK_LIST.length; i++) {
+        addWorkItem(WORK_LIST[i]);
+    }
+
     let mixer = mixitup(document.querySelector(".portfolio-item-list"), {
         selectors: {
             target: ".portfolio-item",
