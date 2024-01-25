@@ -4,12 +4,13 @@ function addWorkItem(workItem) {
     function randomId() {
         const len = 6;
 
-        const id = "_" + Math.random()
-            .toString(36)
-            .substring(2, len + 2);
+        const id =
+            "_" +
+            Math.random()
+                .toString(36)
+                .substring(2, len + 2);
 
-        if(_GENERATED_ID_LIST[id])
-            return randomId();
+        if (_GENERATED_ID_LIST[id]) return randomId();
 
         _GENERATED_ID_LIST[id] = true;
         return id;
@@ -69,18 +70,20 @@ function addWorkItem(workItem) {
     const buttonHtml =
         workItem.button === null || workItem.button.length === 0
             ? ""
-            : workItem.button.length == 1
-            ? `
+            : `
         <div style="position: relative; left: 15px; bottom: 12px">
             <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary btn-portfolio-view" href="${workItem.button[0].url}" target="_blank">
-                    <i class="${workItem.button[0].icon}"></i>
-                    ${workItem.button[0].text}
-                </a>
+                ${workItem.button
+                    .map((e) => {
+                        return `<a class="btn btn-sm btn-outline-secondary btn-portfolio-view" href="${e.url}" target="_blank">
+                                    <i class="${e.icon}"></i>
+                                    ${e.text}
+                                </a>`;
+                    })
+                    .join("")}
             </div>
         </div>
-    `
-            : ``;
+    `;
 
     const html = `
         <div class="col portfolio-item ${workItem.tags.join(" ")}">

@@ -62,6 +62,12 @@ const WORK_LIST = [
             `Application pictures are under the "<strong>home_controller_app</strong>" directory of GitHub repo.`,
             "home-automation-note"
         ),
-        [_workButton("GitHub", "fa-brands fa-github", "https://github.com/egebilecen/eb-home-automation")]
+        [
+            _workButton(
+                "GitHub",
+                "fa-brands fa-github",
+                "https://github.com/egebilecen/eb-home-automation"
+            ),
+        ]
     ),
 ];
