@@ -1,4 +1,23 @@
+const _GENERATED_ID_LIST = {};
+
 function addWorkItem(workItem) {
+    function randomId() {
+        const len = 6;
+
+        const id = "_" + Math.random()
+            .toString(36)
+            .substring(2, len + 2);
+
+        if(_GENERATED_ID_LIST[id])
+            return randomId();
+
+        _GENERATED_ID_LIST[id] = true;
+        return id;
+    }
+
+    let carouselId =
+        workItem.media !== null && workItem.media.length > 1 ? randomId() : "";
+
     let imageHtml =
         workItem.media.length == 0
             ? ""
@@ -14,10 +33,10 @@ function addWorkItem(workItem) {
         />
     `
             : `
-        <div class="carousel slide" data-bs-ride="carousel" id="{{id}}">
+        <div class="carousel slide" data-bs-ride="carousel" id="${carouselId}">
             <div class="carousel-indicators">
-                <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#{{id}}" type="button" aria-current="true"></button>
-                <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#{{id}}" type="button" class=""></button>
+                <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#${carouselId}" type="button" aria-current="true"></button>
+                <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#${carouselId}" type="button" class=""></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -27,11 +46,11 @@ function addWorkItem(workItem) {
                     <img alt="Arelith Combat Simulator Demo" height="255" loading="lazy" src="img/are_combat_sim_2.png" width="100%">
                 </div>
             </div>
-            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#{{id}}" type="button">
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#${carouselId}" type="button">
                 <span aria-hidden="true" class="carousel-control-prev-icon"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#{{id}}" type="button">
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#${carouselId}" type="button">
                 <span aria-hidden="true" class="carousel-control-next-icon"></span>
                 <span class="visually-hidden">Next</span>
             </button>
