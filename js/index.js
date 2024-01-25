@@ -11,8 +11,17 @@ $(window).on("load", function () {
         );
         $("input[name='language']").val(localization.selectedLanguage);
     }
+});
 
-    $(".loader").fadeOut("slow");
+// Events
+$(document).on("keyup", (e) => {
+    if (e.keyCode == 27 && $("#img_box").css("display") != "none")
+        // ESC
+        $("#img_box").click(); // close image box
+
+    if (e.keyCode == 113)
+        // F2
+        $("input[name='language']").click();
 });
 
 $(() => {
@@ -20,17 +29,6 @@ $(() => {
         selectors: {
             target: ".portfolio-item",
         },
-    });
-
-    // Events
-    $(document).on("keyup", (e) => {
-        if (e.keyCode == 27 && $("#img_box").css("display") != "none")
-            // ESC
-            $("#img_box").click(); // close image box
-
-        if (e.keyCode == 113)
-            // F2
-            $("input[name='language']").click();
     });
 
     $(".portfolio-filter > li").on("click", (e) => {
@@ -63,6 +61,7 @@ $(() => {
 
     // Portfolio
     let portfolioItems = $(".portfolio-item");
+
     for (let i = 0; i < portfolioItems.length; i++) {
         let portfolioItem = $(portfolioItems[i]);
         let categoryList = portfolioItem.find(".portfolio-category-list");
@@ -96,6 +95,7 @@ $(() => {
     );
 
     let filters = $(".portfolio-filter > li");
+
     for (let i = 1; i < filters.length; i++) {
         let filterElem = $(filters[i]);
         let filter = filterElem.attr("data-filter");
@@ -114,4 +114,6 @@ $(() => {
     $(".carousel").carousel({
         interval: false,
     });
+
+    $(".loader").fadeOut("slow");
 });
