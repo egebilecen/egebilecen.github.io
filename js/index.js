@@ -40,12 +40,26 @@ function addWorkItem(workItem) {
                 <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#${carouselId}" type="button" class=""></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img alt="Arelith Combat Simulator Demo" height="255" loading="lazy" src="img/are_combat_sim_1.png" width="100%">
-                </div>
-                <div class="carousel-item">
-                    <img alt="Arelith Combat Simulator Demo" height="255" loading="lazy" src="img/are_combat_sim_2.png" width="100%">
-                </div>
+                ${workItem.media
+                    .map((e, i) => {
+                        const elemHtml =
+                            e.isVideo === false
+                                ? `
+                                <img alt="${e.alt}" height="255" loading="lazy" src="${e.url}" width="100%">
+                            `
+                                : `
+                                
+                            `;
+
+                        return `
+                            <div class="carousel-item${
+                                i === 0 ? " active" : ""
+                            }">
+                                ${elemHtml}
+                            </div>
+                        `;
+                    })
+                    .join("")}
             </div>
             <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#${carouselId}" type="button">
                 <span aria-hidden="true" class="carousel-control-prev-icon"></span>
