@@ -105,7 +105,7 @@ function addWorkItem(workItem) {
     `;
 
     const html = `
-        <div class="col portfolio-item --EB-- ${workItem.tags.join(" ")}">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 portfolio-item --EB-- ${workItem.tags.join(" ")}">
             <div class="card shadow-sm h-100">
                 ${imageHtml}
                 <div class="card-body">
