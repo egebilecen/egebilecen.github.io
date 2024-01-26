@@ -48,7 +48,12 @@ function addWorkItem(workItem) {
                                 <img alt="${e.alt}" height="255" loading="lazy" src="${e.url}" width="100%">
                             `
                                 : `
-                                
+                                <video class="card-img-top" controls="">
+                                    <source
+                                        src="${e.url}"
+                                        type="video/mp4"
+                                    />
+                                </video>
                             `;
 
                         return `
