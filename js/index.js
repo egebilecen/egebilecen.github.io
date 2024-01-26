@@ -78,7 +78,7 @@ function addWorkItem(workItem) {
     `;
 
     const footerHtml =
-        workItem.footer !== null
+        workItem.footer.text !== null
             ? `
         <small class="text-muted" eb-localization="${workItem.footer.localizationKey}">
             ${workItem.footer.text}
@@ -87,12 +87,12 @@ function addWorkItem(workItem) {
             : "";
 
     const buttonHtml =
-        workItem.button === null || workItem.button.length === 0
+        workItem.buttons === null || workItem.buttons.length === 0
             ? ""
             : `
         <div style="position: relative; left: 15px; bottom: 12px">
             <div class="btn-group">
-                ${workItem.button
+                ${workItem.buttons
                     .map((e) => {
                         return `<a class="btn btn-sm btn-outline-secondary btn-portfolio-view" href="${e.url}" target="_blank">
                                     <i class="${e.icon}"></i>
