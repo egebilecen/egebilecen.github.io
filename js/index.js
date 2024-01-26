@@ -105,7 +105,7 @@ function addWorkItem(workItem) {
     `;
 
     const html = `
-        <div class="col portfolio-item ${workItem.tags.join(" ")}">
+        <div class="col portfolio-item --EB-- ${workItem.tags.join(" ")}">
             <div class="card shadow-sm h-100">
                 ${imageHtml}
                 <div class="card-body">
@@ -205,9 +205,9 @@ $(() => {
     for (let i = 0; i < portfolioItems.length; i++) {
         let portfolioItem = $(portfolioItems[i]);
         let categoryList = portfolioItem.find(".portfolio-category-list");
-        let filterClasses = portfolioItem.attr("class").split(" ");
+        let filterClasses = portfolioItem.attr("class").split("--EB--")[1].trim().split(" ");
 
-        for (let j = 2; j < filterClasses.length; j++) {
+        for (let j = 0; j < filterClasses.length; j++) {
             let filterClass = filterClasses[j];
 
             let portfolioFilter = $(
