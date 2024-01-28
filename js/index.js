@@ -255,5 +255,7 @@ $(() => {
         interval: false,
     });
 
-    $(".loader").fadeOut("slow");
+    setTimeout(() => {
+        $(".loader").fadeOut("slow");
+    }, 100);
 });
