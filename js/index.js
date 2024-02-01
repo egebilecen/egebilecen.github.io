@@ -45,8 +45,17 @@ function addWorkItem(workItem) {
             : `
         <div class="carousel slide" data-bs-ride="carousel" id="${carouselId}">
             <div class="carousel-indicators">
-                <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#${carouselId}" type="button" aria-current="true"></button>
-                <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#${carouselId}" type="button" class=""></button>
+                ${workItem.media
+                    .map((_, i) => {
+                        const isActive = i === 0 ? "active" : "";
+
+                        return `
+                            <button aria-label="Slide ${
+                                i + 1
+                            }" data-bs-slide-to="${i}" data-bs-target="#${carouselId}" type="button" class="${isActive}"></button>
+                        `;
+                    })
+                    .join("")}
             </div>
             <div class="carousel-inner">
                 ${workItem.media
