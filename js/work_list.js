@@ -89,8 +89,16 @@ const WORK_LIST = [
                 alt: "Circle Detection Algorithm Demo",
                 isVideo: false,
             },
-            { url: "img/circle_detection_1.mp4", alt: null, isVideo: true },
-            { url: "img/circle_detection_2.mp4", alt: null, isVideo: true },
+            {
+                url: "img/circle_detection_1.mp4",
+                alt: "Circle Detection Algorithm",
+                isVideo: true,
+            },
+            {
+                url: "img/circle_detection_2.mp4",
+                alt: "Circle Detection Algorithm",
+                isVideo: true,
+            },
         ],
         tags: ["python", "image-processing"],
         title: {
