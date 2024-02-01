@@ -112,7 +112,56 @@ function addWorkItem(workItem) {
             <div class="btn-group">
                 ${workItem.buttons
                     .map((e) => {
-                        return `<a class="btn btn-sm btn-outline-secondary btn-portfolio-view" href="${e.url}" target="_blank">
+                        let elemId = randomId();
+
+                        if (e.displayStar) {
+                            setTimeout(() => {
+                                const repo = e.url.split("/").pop();
+                                const apiUrl =
+                                    "https://api.github.com/repos/egebilecen/" +
+                                    repo;
+                                const cookieVal = "star_" + repo;
+
+                                const displayStars = (
+                                    stars,
+                                    updateCookie = false
+                                ) => {
+                                    if (stars > 0) {
+                                        if (updateCookie) {
+                                            // Expires after 1 hour.
+                                            setCookie(cookieVal, stars, 60);
+                                        }
+
+                                        $(`#${elemId}`).html(
+                                            $(`#${elemId}`).html() +
+                                                `[${stars} <i class="fa-solid fa-star"></i>]`
+                                        );
+                                    }
+                                };
+
+                                let stars = getCookie(cookieVal);
+
+                                if (stars === null) {
+                                    $.ajax({
+                                        url: apiUrl,
+                                        type: "get",
+                                        data: {},
+                                        dataType: "json",
+                                        success: (res) => {
+                                            displayStars(
+                                                res.stargazers_count,
+                                                true
+                                            );
+                                        },
+                                    });
+                                } else {
+                                    stars = parseInt(stars);
+                                    displayStars(stars);
+                                }
+                            }, 100);
+                        }
+
+                        return `<a id="${elemId}" class="btn btn-sm btn-outline-secondary btn-portfolio-view" href="${e.url}" target="_blank">
                                     <i class="${e.icon}"></i>
                                     ${e.text}
                                 </a>`;
