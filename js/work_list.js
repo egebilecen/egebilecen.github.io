@@ -261,7 +261,9 @@ const WORK_LIST = [
         ],
     },
     {
-        media: [],
+        media: [
+            { url: "img/bill_gen.mp4", alt: "Bill Generator", isVideo: true },
+        ],
         tags: ["cs", "windows-forms"],
         title: {
             text: "Bill Generator",
