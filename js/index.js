@@ -23,16 +23,25 @@ function addWorkItem(workItem) {
         workItem.media.length == 0
             ? ""
             : workItem.media.length === 1
-            ? `
-        <img
-            alt="${workItem.media[0].alt}"
-            class="card-img-top"
-            height="255"
-            loading="lazy"
-            src="${workItem.media[0].url}"
-            width="100%"
-        />
-    `
+            ? !workItem.media[0].isVideo
+                ? `
+            <img
+                alt="${workItem.media[0].alt}"
+                class="card-img-top"
+                height="255"
+                loading="lazy"
+                src="${workItem.media[0].url}"
+                width="100%"
+            />
+        `
+                : `
+            <video class="card-img-top" controls="">
+                <source
+                    src="${workItem.media[0].url}"
+                    type="video/mp4"
+                />
+            </video>
+        `
             : `
         <div class="carousel slide" data-bs-ride="carousel" id="${carouselId}">
             <div class="carousel-indicators">
@@ -105,7 +114,9 @@ function addWorkItem(workItem) {
     `;
 
     const html = `
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 portfolio-item --EB-- ${workItem.tags.join(" ")}">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 portfolio-item --EB-- ${workItem.tags.join(
+            " "
+        )}">
             <div class="card shadow-sm h-100">
                 ${imageHtml}
                 <div class="card-body">
@@ -205,7 +216,11 @@ $(() => {
     for (let i = 0; i < portfolioItems.length; i++) {
         let portfolioItem = $(portfolioItems[i]);
         let categoryList = portfolioItem.find(".portfolio-category-list");
-        let filterClasses = portfolioItem.attr("class").split("--EB--")[1].trim().split(" ");
+        let filterClasses = portfolioItem
+            .attr("class")
+            .split("--EB--")[1]
+            .trim()
+            .split(" ");
 
         for (let j = 0; j < filterClasses.length; j++) {
             let filterClass = filterClasses[j];
