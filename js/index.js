@@ -257,5 +257,5 @@ $(() => {
 
     setTimeout(() => {
         $(".loader").fadeOut("slow");
-    }, 100);
+    }, 200);
 });
