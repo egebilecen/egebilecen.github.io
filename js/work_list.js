@@ -107,6 +107,8 @@ const WORK_LIST = [
                 url: "https://github.com/egebilecen/eb-python/blob/master/eb/image_processing/detection.py#L86",
                 text: "GitHub",
                 icon: "fa-brands fa-github",
+                displayStar: true,
+                repoName: "eb-python"
             },
         ],
     },

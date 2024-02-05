@@ -116,7 +116,7 @@ function addWorkItem(workItem) {
 
                         if (e.displayStar) {
                             setTimeout(() => {
-                                const repo = e.url.split("/").pop();
+                                const repo = e.repoName !== undefined ? e.repoName : e.url.split("/").pop();
                                 const apiUrl =
                                     "https://api.github.com/repos/egebilecen/" +
                                     repo;
