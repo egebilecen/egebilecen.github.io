@@ -53,32 +53,24 @@ const WORK_LIST = [
     },
     {
         media: [
-            {
-                url: "img/are_combat_sim_1.png",
-                alt: "Arelith Combat Simulator Demo",
-                isVideo: false,
-            },
-            {
-                url: "img/are_combat_sim_2.png",
-                alt: "Arelith Combat Simulator Demo",
-                isVideo: false,
-            },
+            { url: "img/dcbot.jpeg", alt: "Discord Bot Logo", isVideo: false },
         ],
-        tags: ["rust", "tauri", "react", "html-css", "javascript"],
+        tags: ["cs", "bot"],
         title: {
-            text: "Arelith Combat Simulator",
-            localizationKey: "are-combat-sim-title",
+            text: "Discord Bot for Project Zomboid Server Management",
+            localizationKey: "pz-server-discord-bot-title",
         },
         desc: {
-            text: "In this project, I created a combat simulator for the <b>Neverwinter Nights</b> game, which is based on the <b>Dungeons &amp; Dragons</b> tabletop game. <b>Arelith</b> is a persistent role-playing server with new mechanics added on top of the base game, which is what this simulator is mainly based on. The project is based on <b>Tauri</b> and uses <b>React</b> for the user interface, with the utilization of <b>Ant Design</b> UI components. To display interactive charts, the <b>ECharts</b> library is used.",
-            localizationKey: "are-combat-sim-desc",
+            text: "A discord bot I have written for managing <strong>Project Zomboid</strong> server console remotely through discord using <strong>C#</strong> and <strong>Discord.NET</strong> library. Also, this bot adds more functionality to the server that normally aren't available such as automated server restarts every 6 hours, mod update detections, auto start in case of server dying, etc.",
+            localizationKey: "pz-server-discord-bot-desc",
         },
         footer: { text: null, localizationKey: null },
         buttons: [
             {
-                url: "https://github.com/egebilecen/arelith-combat-simulator-gui",
+                url: "https://github.com/egebilecen/PZServerDiscordBot",
                 text: "GitHub",
                 icon: "fa-brands fa-github",
+                displayStar: true,
             },
         ],
     },
@@ -168,24 +160,32 @@ const WORK_LIST = [
     },
     {
         media: [
-            { url: "img/dcbot.jpeg", alt: "Discord Bot Logo", isVideo: false },
+            {
+                url: "img/are_combat_sim_1.png",
+                alt: "Arelith Combat Simulator Demo",
+                isVideo: false,
+            },
+            {
+                url: "img/are_combat_sim_2.png",
+                alt: "Arelith Combat Simulator Demo",
+                isVideo: false,
+            },
         ],
-        tags: ["cs", "bot"],
+        tags: ["rust", "tauri", "react", "html-css", "javascript"],
         title: {
-            text: "Discord Bot for Project Zomboid Server Management",
-            localizationKey: "pz-server-discord-bot-title",
+            text: "Arelith Combat Simulator",
+            localizationKey: "are-combat-sim-title",
         },
         desc: {
-            text: "A discord bot I have written for managing <strong>Project Zomboid</strong> server console remotely through discord using <strong>C#</strong> and <strong>Discord.NET</strong> library. Also, this bot adds more functionality to the server that normally aren't available such as automated server restarts every 6 hours, mod update detections, auto start in case of server dying, etc.",
-            localizationKey: "pz-server-discord-bot-desc",
+            text: "In this project, I created a combat simulator for the <b>Neverwinter Nights</b> game, which is based on the <b>Dungeons &amp; Dragons</b> tabletop game. <b>Arelith</b> is a persistent role-playing server with new mechanics added on top of the base game, which is what this simulator is mainly based on. The project is based on <b>Tauri</b> and uses <b>React</b> for the user interface, with the utilization of <b>Ant Design</b> UI components. To display interactive charts, the <b>ECharts</b> library is used.",
+            localizationKey: "are-combat-sim-desc",
         },
         footer: { text: null, localizationKey: null },
         buttons: [
             {
-                url: "https://github.com/egebilecen/PZServerDiscordBot",
+                url: "https://github.com/egebilecen/arelith-combat-simulator-gui",
                 text: "GitHub",
                 icon: "fa-brands fa-github",
-                displayStar: true,
             },
         ],
     },
