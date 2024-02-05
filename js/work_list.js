@@ -194,52 +194,6 @@ const WORK_LIST = [
     {
         media: [
             {
-                url: "img/crypto-tracker.jpeg",
-                alt: "Crypto Tracker Notification Example",
-                isVideo: false,
-            },
-        ],
-        tags: ["php", "bot"],
-        title: {
-            text: "Crypto Coin Tracker",
-            localizationKey: "crypto-coin-tracker-title",
-        },
-        desc: {
-            text: "In this project, I did write a <strong>PHP</strong> cronjob script to periodically check a few crypto coin's change percentages and send push notifications to the users via an app called <strong>Catapush</strong> (using their API) if the percentage change is above or below the specified threshold using <strong>CoinMarketCap</strong> API.",
-            localizationKey: "crypto-coin-tracker-desc",
-        },
-        footer: { text: null, localizationKey: null },
-        buttons: [],
-    },
-    {
-        media: [
-            {
-                url: "img/nwn.png",
-                alt: "Portrait Generation Application UI",
-                isVideo: false,
-            },
-        ],
-        tags: ["cs", "windows-forms"],
-        title: {
-            text: "Portrait Generation Application",
-            localizationKey: "nwn-portrait-program-title",
-        },
-        desc: {
-            text: "A program I have written for <strong>Neverwinter Nights</strong> game to automatically generate portraits from selected portrait (image) that matches with the game's portrait size rules. I did use <strong>C#</strong> and <strong>Windows Forms</strong> for this application. It also features cropping based on portrait size (This game has four different portrait sizes).",
-            localizationKey: "nwn-portrait-program-desc",
-        },
-        footer: { text: null, localizationKey: null },
-        buttons: [
-            {
-                url: "https://github.com/egebilecen/arelith-portrait-maker",
-                text: "GitHub",
-                icon: "fa-brands fa-github",
-            },
-        ],
-    },
-    {
-        media: [
-            {
                 url: "img/drone.png",
                 alt: "Drone Simulation Demo",
                 isVideo: false,
@@ -272,6 +226,24 @@ const WORK_LIST = [
         ],
     },
     {
+        media: [{ url: "img/python.png", alt: "Python Logo", isVideo: false }],
+        tags: ["python"],
+        title: { text: "Websocket Server", localizationKey: "" },
+        desc: {
+            text: "<strong>Python</strong> server library for the <strong>RFC6455 Websocket Protocol</strong>.",
+            localizationKey: "websocket-python-server-desc",
+        },
+        footer: { text: null, localizationKey: null },
+        buttons: [
+            {
+                url: "https://github.com/egebilecen/pywebsocket",
+                text: "GitHub",
+                icon: "fa-brands fa-github",
+                displayStar: true,
+            },
+        ],
+    },
+    {
         media: [
             { url: "img/bill_gen.mp4", alt: "Bill Generator", isVideo: true },
         ],
@@ -289,26 +261,6 @@ const WORK_LIST = [
             localizationKey: "freelance-work-desc",
         },
         buttons: [],
-    },
-    {
-        media: [{ url: "img/woz.png", alt: "Image of Game", isVideo: false }],
-        tags: ["html-css", "javascript", "nodejs"],
-        title: {
-            text: "Browser Based 2D Multiplayer Game",
-            localizationKey: "woz-title",
-        },
-        desc: {
-            text: "In this 2D browser based multiplayer game project, I did use <strong>HTML</strong>, <strong>CSS</strong> and <strong>Javascript</strong> for the client side and <strong>NodeJS</strong> for the server side. Communication between client and server done using websockets. I did use <strong>Socket.IO</strong> library for this. Also character data stored on a <strong>MongoDB</strong> database.",
-            localizationKey: "woz-desc",
-        },
-        footer: { text: null, localizationKey: null },
-        buttons: [
-            {
-                url: "https://github.com/egebilecen/world-of-zybrium",
-                text: "GitHub",
-                icon: "fa-brands fa-github",
-            },
-        ],
     },
     {
         media: [
@@ -396,6 +348,72 @@ const WORK_LIST = [
                 icon: "fa-brands fa-github",
             },
         ],
+    },
+    {
+        media: [
+            {
+                url: "img/nwn.png",
+                alt: "Portrait Generation Application UI",
+                isVideo: false,
+            },
+        ],
+        tags: ["cs", "windows-forms"],
+        title: {
+            text: "Portrait Generation Application",
+            localizationKey: "nwn-portrait-program-title",
+        },
+        desc: {
+            text: "A program I have written for <strong>Neverwinter Nights</strong> game to automatically generate portraits from selected portrait (image) that matches with the game's portrait size rules. I did use <strong>C#</strong> and <strong>Windows Forms</strong> for this application. It also features cropping based on portrait size (This game has four different portrait sizes).",
+            localizationKey: "nwn-portrait-program-desc",
+        },
+        footer: { text: null, localizationKey: null },
+        buttons: [
+            {
+                url: "https://github.com/egebilecen/arelith-portrait-maker",
+                text: "GitHub",
+                icon: "fa-brands fa-github",
+            },
+        ],
+    },
+    {
+        media: [{ url: "img/woz.png", alt: "Image of Game", isVideo: false }],
+        tags: ["html-css", "javascript", "nodejs"],
+        title: {
+            text: "Browser Based 2D Multiplayer Game",
+            localizationKey: "woz-title",
+        },
+        desc: {
+            text: "In this 2D browser based multiplayer game project, I did use <strong>HTML</strong>, <strong>CSS</strong> and <strong>Javascript</strong> for the client side and <strong>NodeJS</strong> for the server side. Communication between client and server done using websockets. I did use <strong>Socket.IO</strong> library for this. Also character data stored on a <strong>MongoDB</strong> database.",
+            localizationKey: "woz-desc",
+        },
+        footer: { text: null, localizationKey: null },
+        buttons: [
+            {
+                url: "https://github.com/egebilecen/world-of-zybrium",
+                text: "GitHub",
+                icon: "fa-brands fa-github",
+            },
+        ],
+    },
+    {
+        media: [
+            {
+                url: "img/crypto-tracker.jpeg",
+                alt: "Crypto Tracker Notification Example",
+                isVideo: false,
+            },
+        ],
+        tags: ["php", "bot"],
+        title: {
+            text: "Crypto Coin Tracker",
+            localizationKey: "crypto-coin-tracker-title",
+        },
+        desc: {
+            text: "In this project, I did write a <strong>PHP</strong> cronjob script to periodically check a few crypto coin's change percentages and send push notifications to the users via an app called <strong>Catapush</strong> (using their API) if the percentage change is above or below the specified threshold using <strong>CoinMarketCap</strong> API.",
+            localizationKey: "crypto-coin-tracker-desc",
+        },
+        footer: { text: null, localizationKey: null },
+        buttons: [],
     },
     {
         media: [
@@ -512,24 +530,6 @@ const WORK_LIST = [
                 url: "https://github.com/egebilecen/fingerTheBalloons",
                 text: "GitHub",
                 icon: "fa-brands fa-github",
-            },
-        ],
-    },
-    {
-        media: [{ url: "img/python.png", alt: "Python Logo", isVideo: false }],
-        tags: ["python"],
-        title: { text: "Websocket Server", localizationKey: "" },
-        desc: {
-            text: "<strong>Python</strong> server library for the <strong>RFC6455 Websocket Protocol</strong>.",
-            localizationKey: "websocket-python-server-desc",
-        },
-        footer: { text: null, localizationKey: null },
-        buttons: [
-            {
-                url: "https://github.com/egebilecen/pywebsocket",
-                text: "GitHub",
-                icon: "fa-brands fa-github",
-                displayStar: true,
             },
         ],
     },
