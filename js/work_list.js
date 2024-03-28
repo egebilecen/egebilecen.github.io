@@ -470,13 +470,7 @@ const WORK_LIST = [
             localizationKey: "english-japanese-translate-desc",
         },
         footer: { text: null, localizationKey: null },
-        buttons: [
-            {
-                url: "https://chrome.google.com/webstore/detail/japaneseenglish-word-sear/nmjocikfhpbjdboijgejckifnecganco",
-                text: "View",
-                icon: "fa-solid fa-eye",
-            },
-        ],
+        buttons: [],
     },
     {
         media: [
