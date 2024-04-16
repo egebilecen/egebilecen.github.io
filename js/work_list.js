@@ -108,7 +108,7 @@ const WORK_LIST = [
                 text: "GitHub",
                 icon: "fa-brands fa-github",
                 displayStar: true,
-                repoName: "eb-python",
+                repoName: "eb-python"
             },
         ],
     },
@@ -288,11 +288,17 @@ const WORK_LIST = [
         tags: ["php", "html-css", "javascript", "bot"],
         title: { text: "Arelith Portal Tracker", localizationKey: "" },
         desc: {
-            text: "A <strong>PHP</strong> and <strong>MySQL</strong> based statistics panel for tracking a game's user activity. To track the user activity, I did write a <strong>PHP</strong> cronjob script that runs every 5 minutes to save the activity into database.",
+            text: "A <strong>PHP</strong> and <strong>MySQL</strong> based statistics panel for tracking a game's user activity. To track the user activity, I did write a <strong>PHP</strong> cronjob script that runs every 15 minutes to save the activity into database.",
             localizationKey: "arelith-portal-tracker-desc",
         },
         footer: { text: null, localizationKey: null },
-        buttons: [],
+        buttons: [
+            {
+                url: "https://github.com/egebilecen/arelith-portal-tracker",
+                text: "GitHub",
+                icon: "fa-brands fa-github",
+            },
+        ],
     },
     {
         media: [
