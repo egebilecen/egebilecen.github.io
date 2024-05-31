@@ -13,14 +13,17 @@ const WORK_LIST = [
             localizationKey: "mesh-network-home-title",
         },
         desc: {
-            text: "In this project, a mesh network has been created for published data from several sensors that are placed separately from each other in order to reach the <strong>System on Chip</strong> system in the house that is acting as a server. These sensor data will then be published to the mobile application that is connected to the server via <strong>Websocket</strong>. I choosed <strong>Raspberry PI 3</strong> as <strong>SoC</strong> because of it's cheap price. <strong>painlessMesh</strong> library is used for creating the mesh network. <strong>NodeMCU</strong> IoT platform is used for the nodes in mesh network. Mobile application connects to the server using it's local IP address in WiFi network. Communication between root node and server is done by using <strong>ROS</strong>. Root node sends all sensor data from child nodes via <strong>ROS Serial</strong> library. Root node is connected to the server via physical cable. Reason of this is <strong>NodeMCU</strong> being unable to connect more than one WiFi network. (Meanwhile <strong>painlessMesh</strong> itself creates an access point, <strong>ROS Serial</strong> library attempts to connect to an exist WiFi network. This causes these two library to conflict with each other.) Mobile application is developed using <strong>Xamarin Forms</strong> to be cross-platform application.",
+            text: "In this project, a mesh network has been created for published data from several sensors that are placed separately from each other in order to reach to the <strong>System on Chip</strong> (SoC) in the house that is acting as a server. These sensor data will then be published to the mobile application that is connected to the server via <strong>Websocket</strong>. I choosed <strong>Raspberry PI 3</strong> as <strong>SoC</strong> because of it's cheap price. <strong>painlessMesh</strong> library is used for creating the mesh network. <strong>NodeMCU</strong> IoT platform is used for the nodes in mesh network. Mobile application connects to the server using it's local IP address in WiFi network. Communication between root node and server is done by using <strong>ROS</strong>. Root node sends all sensor data from child nodes via <strong>ROS Serial</strong> library. Root node is connected to the server via physical cable. Reason of this is <strong>NodeMCU</strong> being unable to connect more than one WiFi network. (Meanwhile <strong>painlessMesh</strong> itself creates an access point, <strong>ROS Serial</strong> library attempts to connect to an exist WiFi network. This causes these two library to conflict with each other.) Mobile application is developed using <strong>Xamarin Forms</strong> to be cross-platform application.",
             localizationKey: "mesh-network-home-desc",
         },
-        footer: {
-            text: "No source code available for this project as it has been done as assignment in my collage.",
-            localizationKey: "mesh-network-home-note",
-        },
-        buttons: [],
+        footer: { text: null, localizationKey: null },
+        buttons: [
+            {
+                url: "https://github.com/egebilecen/eb-mesh-network-home-automation",
+                text: "GitHub",
+                icon: "fa-brands fa-github",
+            },
+        ],
     },
     {
         media: [
@@ -108,7 +111,7 @@ const WORK_LIST = [
                 text: "GitHub",
                 icon: "fa-brands fa-github",
                 displayStar: true,
-                repoName: "eb-python"
+                repoName: "eb-python",
             },
         ],
     },
