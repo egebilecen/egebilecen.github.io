@@ -108,7 +108,7 @@ function addWorkItem(workItem) {
         workItem.buttons === null || workItem.buttons.length === 0
             ? ""
             : `
-        <div style="position: relative; left: 15px; bottom: 12px">
+        <div style="margin: 0 12px 12px 12px;">
             <div class="btn-group">
                 ${workItem.buttons
                     .map((e) => {

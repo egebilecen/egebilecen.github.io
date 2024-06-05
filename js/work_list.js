@@ -533,9 +533,9 @@ const WORK_LIST = [
     {
         media: [{ url: "img/mod.jpg", alt: "Mod Logo", isVideo: false }],
         tags: ["lua", "game-mod"],
-        title: { text: "Project Zomboid - ReviveMP", localizationKey: "" },
+        title: { text: "Project Zomboid", localizationKey: "" },
         desc: {
-            text: "A mod I created using <strong>Lua</strong> for <strong>Project Zomboid</strong> game.",
+            text: "Mods I created using <strong>Lua</strong> for <strong>Project Zomboid</strong> game.",
             localizationKey: "project-zomboid-mod-desc",
         },
         footer: { text: null, localizationKey: null },
@@ -545,58 +545,16 @@ const WORK_LIST = [
                 text: "Steam",
                 icon: "fa-brands fa-steam",
             },
-        ],
-    },
-    {
-        media: [{ url: "img/mod.jpg", alt: "Mod Logo", isVideo: false }],
-        tags: ["lua", "game-mod"],
-        title: {
-            text: "Project Zomboid - ReviveMP Add-on - Permanent Injuries",
-            localizationKey: "",
-        },
-        desc: {
-            text: "A mod I created using <strong>Lua</strong> for <strong>Project Zomboid</strong> game.",
-            localizationKey: "project-zomboid-mod-desc",
-        },
-        footer: { text: null, localizationKey: null },
-        buttons: [
             {
                 url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2792422645",
                 text: "Steam",
                 icon: "fa-brands fa-steam",
             },
-        ],
-    },
-    {
-        media: [{ url: "img/mod.jpg", alt: "Mod Logo", isVideo: false }],
-        tags: ["lua", "game-mod"],
-        title: {
-            text: "Project Zomboid - Save It To Server!",
-            localizationKey: "",
-        },
-        desc: {
-            text: "A mod I created using <strong>Lua</strong> for <strong>Project Zomboid</strong> game.",
-            localizationKey: "project-zomboid-mod-desc",
-        },
-        footer: { text: null, localizationKey: null },
-        buttons: [
             {
                 url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2791332578",
                 text: "Steam",
                 icon: "fa-brands fa-steam",
             },
-        ],
-    },
-    {
-        media: [{ url: "img/mod.jpg", alt: "Mod Logo", isVideo: false }],
-        tags: ["lua", "game-mod"],
-        title: { text: "Project Zomboid - Send Over!", localizationKey: "" },
-        desc: {
-            text: "A mod I created using <strong>Lua</strong> for <strong>Project Zomboid</strong> game.",
-            localizationKey: "project-zomboid-mod-desc",
-        },
-        footer: { text: null, localizationKey: null },
-        buttons: [
             {
                 url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2796306693",
                 text: "Steam",
