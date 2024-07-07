@@ -1,3 +1,4 @@
+// Credits: https://stackoverflow.com/a/18652401/8277139.
 // @expiry is in minutes
 function setCookie(key, value, expiry) {
     var expires = new Date();
