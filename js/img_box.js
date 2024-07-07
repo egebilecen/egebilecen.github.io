@@ -1,3 +1,4 @@
+// Credits: https://github.com/krittanon-w/IMG-BOX.
 var bg_color_img_box = 'rgba(0,0,0,0.9)'
 var allow_hide_scroll_img_box = 'false'
 var use_fade_inout_img_box = 'yes'
