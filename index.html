@@ -2,340 +2,190 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta
-            content="IE=edge"
-            http-equiv="X-UA-Compatible"
-        />
-        <meta
-            content="width=device-width, initial-scale=1.0"
-            name="viewport"
-        />
-        <meta
-            content="Hello, I am Ege Bilecen, and I am a mechatronics engineer. I specialize in software development. This is my website, where I share my work."
-            name="description"
-        />
-        <title eb-localization="site-title">Ege Bilecen - Portfolio</title>
-        <link
-            href="img/EB_logo.png"
-            rel="icon"
-            type="image/png"
-        />
-        <link
-            href="img/EB_logo.png"
-            rel="apple-touch-icon"
-        />
-        <link
-            href="css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="css/fontawesome.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="css/style.css"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <div class="loader"></div>
-        <div
-            class="container"
-            id="main"
-            style="background: #fbfbfb"
-        >
-            <div id="language-selector">
-                <label class="button-toggle-wrap">
-                    <span
-                        class="fw-bold"
-                        id="current-language"
-                        >EN</span
-                    >
-                    <input
-                        class="toggler"
-                        name="language"
-                        type="checkbox"
-                        value="en"
-                    />
-                    <div class="button-toggle">
-                        <div class="handle">
-                            <div class="bars"></div>
-                        </div>
-                    </div>
-                </label>
-            </div>
-            <div class="row align-items-center p-5">
-                <div class="col-lg-1"></div>
-                <div class="col-sm-8 col-lg-4">
-                    <img
-                        title="Ege Bilecen"
-                        alt="Ege Bilecen Personal Photo"
-                        class="d-block mx-lg-auto img-fluid"
-                        src="img/ege_bilecen.jpg"
-                    />
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="fw-bold lh-1 mb-3">
-                        <span eb-localization="title-1"
-                            >Hello, I am <strong>Ege Bilecen</strong>, and I am
-                            a</span
-                        >
-                        <span
-                            eb-localization="title-2"
-                            style="
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta
+		content="Hello, I am Ege Bilecen, and I am a mechatronics engineer. I specialize in software development. This is my website, where I share my work."
+		name="description" />
+	<title eb-localization="site-title">Ege Bilecen - Portfolio</title>
+	<link href="img/EB_logo.png" rel="icon" type="image/png" />
+	<link href="img/EB_logo.png" rel="apple-touch-icon" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/fontawesome.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="loader"></div>
+	<div class="container" id="main" style="background: #fbfbfb">
+		<div id="language-selector">
+			<label class="button-toggle-wrap">
+				<span class="fw-bold" id="current-language">EN</span>
+				<input class="toggler" name="language" type="checkbox" value="en" />
+				<div class="button-toggle">
+					<div class="handle">
+						<div class="bars"></div>
+					</div>
+				</div>
+			</label>
+		</div>
+		<div class="row align-items-center p-5">
+			<div class="col-lg-1"></div>
+			<div class="col-sm-8 col-lg-4">
+				<img title="Ege Bilecen" alt="Ege Bilecen Personal Photo" class="d-block mx-lg-auto img-fluid"
+					src="img/ege_bilecen.jpg" />
+			</div>
+			<div class="col-lg-6">
+				<h1 class="fw-bold lh-1 mb-3">
+					<span eb-localization="title-1">Hello, I am <strong>Ege Bilecen</strong>, and I am
+						a</span>
+					<span eb-localization="title-2" style="
                                 color: white;
                                 background: black;
                                 line-height: 1.8;
-                            "
-                            >mechatronics engineer</span
-                        >.
-                    </h1>
-                    <p
-                        eb-localization="title-3"
-                        style="color: #606060"
-                    >
-                        I specialize in software development. I have done a
-                        variety of work in various fields, such as embedded
-                        programming, web development, mobile development, using
-                        various programming languages. Because of this, I am
-                        quite quick to adapt to new projects and new programming
-                        languages.
-                    </p>
-                    <div
-                        class="d-grid gap-2 d-md-flex justify-content-md-start"
-                    >
-                        <a
-                            class="btn btn-lg px-4 fw-bold"
-                            href="https://github.com/egebilecen"
-                            style="
+                            ">mechatronics engineer</span>.
+				</h1>
+				<p eb-localization="title-3" style="color: #606060">
+					I specialize in software development. I have done a
+					variety of work in various fields, such as embedded
+					programming, web development, mobile development, using
+					various programming languages. Because of this, I am
+					quite quick to adapt to new projects and new programming
+					languages.
+				</p>
+				<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+					<a class="btn btn-lg px-4 fw-bold" href="https://github.com/egebilecen" style="
                                 background-color: black;
                                 color: white;
                                 font-size: 1rem;
-                            "
-                            target="_blank"
-                            ><i class="fa-brands fa-github"></i> GitHub</a
-                        >
-                        <a
-                            class="btn btn-lg px-4 fw-bold"
-                            href="https://www.linkedin.com/in/egebilecen/"
-                            style="
+                            " target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+					<a class="btn btn-lg px-4 fw-bold" href="https://www.linkedin.com/in/egebilecen/" style="
                                 background-color: #0072b1;
                                 color: white;
                                 font-size: 1rem;
-                            "
-                            target="_blank"
-                            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
-                        >
-                        <a
-                            class="btn btn-lg px-4 fw-bold"
-                            href="CV.pdf"
-                            style="
+                            " target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+					<a class="btn btn-lg px-4 fw-bold" href="CV.pdf" style="
                                 color: #535353;
                                 font-size: 1rem;
                                 border: 1px solid #6c757d;
-                            "
-                            target="_blank"
-                            ><i class="fa-solid fa-file"></i> CV</a
-                        >
-                        <a
-                            class="btn btn-lg px-4 fw-bold"
-                            href="mailto:egebilecen@hotmail.com"
-                            style="
+                            " target="_blank"><i class="fa-solid fa-file"></i> CV</a>
+					<a class="btn btn-lg px-4 fw-bold" href="mailto:egebilecen@hotmail.com" style="
                                 color: #535353;
                                 font-size: 1rem;
                                 border: 1px solid #6c757d;
-                            "
-                            target="_blank"
-                            ><i class="fa-solid fa-envelope"></i> Mail</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <h2
-                class="text-center fw-bold h1"
-                eb-localization="my-works"
-            >
-                My Works
-            </h2>
-            <div
-                class="d-block mb-5"
-                style="text-align: center"
-            >
-                <p
-                    eb-localization="my-works-desc"
-                    style="max-width: 50%; margin: 0 auto; color: #aaa"
-                ></p>
-            </div>
-            <ul
-                class="list-group list-group-horizontal justify-content-center custom-list portfolio-filter mb-2"
-            >
-                <li
-                    class="list-group-item selected"
-                    data-filter="all"
-                >
-                    <span eb-localization="item-all">All</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".cpp"
-                >
-                    <span>C++</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".cs"
-                >
-                    <span>C#</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".python"
-                >
-                    <span>Python</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".rust"
-                >
-                    <span>Rust</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".php"
-                >
-                    <span>PHP</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".html-css"
-                >
-                    <span>HTML / CSS</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".javascript"
-                >
-                    <span>Javascript</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".lua"
-                >
-                    <span>Lua</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".nodejs"
-                >
-                    <span>Node.JS</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".react"
-                >
-                    <span>React</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".cordova"
-                >
-                    <span>Cordova</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".tauri"
-                >
-                    <span>Tauri</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".ros"
-                >
-                    <span eb-localization="item-ros">ROS</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".automation"
-                >
-                    <span eb-localization="item-automation">Automation</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".image-processing"
-                >
-                    <span eb-localization="item-image-processing"
-                        >Image Processing</span
-                    >
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".windows-forms"
-                >
-                    <span>Windows Forms</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".xamarin-forms"
-                >
-                    <span>Xamarin Forms</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".chrome-extension"
-                >
-                    <span eb-localization="item-chrome-extension">Chrome Extension</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".bot"
-                >
-                    <span>Bot</span>
-                    <span class="item-total"></span>
-                </li>
-                <li
-                    class="list-group-item"
-                    data-filter=".game-mod"
-                >
-                    <span eb-localization="item-game-mod">Game Mod</span>
-                    <span class="item-total"></span>
-                </li>
-            </ul>
-            <div
-                class="portfolio-item-list row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 px-5 pb-3"
-            ></div>
-            <!-- end portfolio-item-list -->
-            <!-- <footer class="px-5 pb-3 text-center"></footer> -->
-        </div>
-        
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/fontawesome.min.js"></script>
-        <script src="js/mixitup.min.js"></script>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/cookie.js"></script>
-        <script src="js/img_box.js"></script>
-        <script src="js/eb_localization.js"></script>
-        <script src="js/work_list.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+                            " target="_blank"><i class="fa-solid fa-envelope"></i> Mail</a>
+				</div>
+			</div>
+		</div>
+		<h2 class="text-center fw-bold h1" eb-localization="my-works">
+			My Works
+		</h2>
+		<div class="d-block mb-5" style="text-align: center">
+			<p eb-localization="my-works-desc" style="max-width: 50%; margin: 0 auto; color: #aaa"></p>
+		</div>
+		<ul class="list-group list-group-horizontal justify-content-center custom-list portfolio-filter mb-2">
+			<li class="list-group-item selected" data-filter="all">
+				<span eb-localization="item-all">All</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".cpp">
+				<span>C++</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".cs">
+				<span>C#</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".python">
+				<span>Python</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".rust">
+				<span>Rust</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".php">
+				<span>PHP</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".html-css">
+				<span>HTML / CSS</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".javascript">
+				<span>Javascript</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".lua">
+				<span>Lua</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".nodejs">
+				<span>Node.JS</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".react">
+				<span>React</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".cordova">
+				<span>Cordova</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".tauri">
+				<span>Tauri</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".ros">
+				<span eb-localization="item-ros">ROS</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".automation">
+				<span eb-localization="item-automation">Automation</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".image-processing">
+				<span eb-localization="item-image-processing">Image Processing</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".windows-forms">
+				<span>Windows Forms</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".xamarin-forms">
+				<span>Xamarin Forms</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".chrome-extension">
+				<span eb-localization="item-chrome-extension">Chrome Extension</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".bot">
+				<span>Bot</span>
+				<span class="item-total"></span>
+			</li>
+			<li class="list-group-item" data-filter=".game-mod">
+				<span eb-localization="item-game-mod">Game Mod</span>
+				<span class="item-total"></span>
+			</li>
+		</ul>
+		<div class="portfolio-item-list row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 px-5 pb-3"></div>
+		<!-- end portfolio-item-list -->
+		<!-- <footer class="px-5 pb-3 text-center"></footer> -->
+	</div>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fontawesome.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/img_box.js"></script>
+	<script src="js/eb_localization.js"></script>
+	<script src="js/work_list.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
 </html>
