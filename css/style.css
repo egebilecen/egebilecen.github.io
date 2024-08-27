@@ -23,6 +23,12 @@ body {
     background: url("../img/loader.svg") 50% 50% no-repeat #18181f;
 }
 
+.no-js {
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
 p {
     text-align: justify;
 }
