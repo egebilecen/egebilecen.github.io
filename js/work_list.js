@@ -64,7 +64,7 @@ const WORK_LIST = [
 			localizationKey: "pz-server-discord-bot-title",
 		},
 		desc: {
-			text: "A discord bot I have written for managing <strong>Project Zomboid</strong> server console remotely through discord using <strong>C#</strong> and <strong>Discord.NET</strong> library. Also, this bot adds more functionality to the server that normally aren't available such as automated server restarts every 6 hours, mod update detections, auto start in case of server dying, etc.",
+			text: "A discord bot I have written for managing <strong>Project Zomboid</strong> server console remotely through discord using <strong>C#</strong> and <strong>Discord.NET</strong> library. Also, this bot adds more functionality to the server that normally isn't available such as automated server restarts every 6 hours, mod update detections, auto start in case of server dying, etc.",
 			localizationKey: "pz-server-discord-bot-desc",
 		},
 		footer: { text: null, localizationKey: null },
