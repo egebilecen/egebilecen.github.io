@@ -421,32 +421,6 @@ const WORK_LIST = [
 	{
 		media: [
 			{
-				url: "img/le.png",
-				alt: "Last Epoc Save Importer / Exporter UI",
-				isVideo: false,
-			},
-		],
-		tags: ["cs", "windows-forms"],
-		title: {
-			text: "Last Epoch Save Importer / Exporter",
-			localizationKey: "",
-		},
-		desc: {
-			text: "An application developed for <strong>Last Epoch</strong> game using <strong>C#</strong> and <strong>Windows Forms</strong>. It exports the save data located in registry and imports the save data using exported registry data.",
-			localizationKey: "last-epoch-desc",
-		},
-		footer: { text: null, localizationKey: null },
-		buttons: [
-			{
-				url: "https://github.com/egebilecen/last-epoch-save-importer-exporter",
-				text: "GitHub",
-				icon: "fa-brands fa-github",
-			},
-		],
-	},
-	{
-		media: [
-			{
 				url: "img/ext1.png",
 				alt: "Javascript Code Executor Chrome Extension Demo",
 				isVideo: false,
