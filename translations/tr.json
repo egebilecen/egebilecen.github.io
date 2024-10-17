@@ -58,7 +58,8 @@
 	"present-80-title": "PRESENT-80 Şifreleme Algoritması İmplementasyonu",
 	"present-80-desc": "<strong>Python</strong> kullanılarak <strong>PRESENT-80</strong> hafif blok şifreleme algoritmasının implementasyonu.",
 	"aes-128-ecb-title": "AES-128 Şifreleme Algoritmasının ECB Modunda İmplementasyonu",
-	"aes-128-ecb-desc": "<strong>Python</strong> kullanılarak <strong>AES-128</strong> blok şifreleme algoritmasının <strong>ECB</strong> modunun implementasyonu."
 	"aes-128-ecb-desc": "<strong>Python</strong> kullanılarak <strong>AES-128</strong> blok şifreleme algoritmasının <strong>ECB</strong> modunun implementasyonu.",
 	"webview-app": "Webview Uygulaması",
+	"linux-kernel-module-title": "Yüklenebilir Linux Kernel Modülü",
+	"linux-kernel-module-desc": "Bu proje <strong>PRESENT-80</strong> şifreleme algoritmasının <strong>yüklenebilir kernel modülü</strong> olarak <strong>C</strong> ve <strong>Rust</strong> dillerindeki implementasyonunu içeriyor."
 }

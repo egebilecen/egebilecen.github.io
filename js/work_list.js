@@ -569,5 +569,22 @@ const WORK_LIST = [
 				icon: "fa-brands fa-github",
 			},
 		],
+	},
+	{
+		media: [{ url: "img/linux.png", alt: "Linux Logo", isVideo: false }],
+		tags: ["c", "rust"],
+		title: { text: "Loadable Linux Kernel Module", localizationKey: "linux-kernel-module-title" },
+		desc: {
+			text: "This project consists of implementation of the <strong>PRESENT-80</strong> encryption algorithm in <strong>C</strong> and <strong>Rust</strong> as a <strong>loadable kernel module</strong>.",
+			localizationKey: "linux-kernel-module-desc"
+		},
+		footer: { text: null, localizationKey: null },
+		buttons: [
+			{
+				url: "https://github.com/egebilecen/rust-in-the-linux-kernel",
+				text: "GitHub",
+				icon: "fa-brands fa-github",
+			},
+		],
 	}
 ];
