@@ -33,7 +33,7 @@ const WORK_LIST = [
 				isVideo: false,
 			},
 		],
-		tags: ["cpp", "html-css", "cordova", "automation"],
+		tags: ["cpp", "html-css", "cordova", "webview-app", "automation"],
 		title: {
 			text: "Home Automation",
 			localizationKey: "home-automation-title",
@@ -148,7 +148,7 @@ const WORK_LIST = [
 				isVideo: false,
 			},
 		],
-		tags: ["rust", "html-css", "javascript", "react", "tauri"],
+		tags: ["rust", "html-css", "javascript", "react", "tauri", "webview-app"],
 		title: {
 			text: "License Generator",
 			localizationKey: "license-generator-title",
@@ -176,7 +176,7 @@ const WORK_LIST = [
 				isVideo: false,
 			},
 		],
-		tags: ["rust", "tauri", "react", "html-css", "javascript"],
+		tags: ["rust", "tauri", "webview-app", "react", "html-css", "javascript"],
 		title: {
 			text: "Arelith Combat Simulator",
 			localizationKey: "are-combat-sim-title",
@@ -212,7 +212,7 @@ const WORK_LIST = [
 			localizationKey: "2d-drone-simulation-desc",
 		},
 		footer: {
-			text: "<strong>Note for Demo:</strong><br> You can enable swarm movement by clicking to the most top right button. It is disabled as default for test purposes.",
+			text: "<strong>Note for Demo</strong><br> You can enable swarm movement by clicking to the most top right button. It is disabled as default for test purposes.",
 			localizationKey: "2d-drone-simulation-note",
 		},
 		buttons: [
@@ -463,7 +463,7 @@ const WORK_LIST = [
 				isVideo: false,
 			},
 		],
-		tags: ["php", "html-css", "cordova"],
+		tags: ["php", "html-css", "cordova", "webview-app"],
 		title: {
 			text: "Manga Reading Application",
 			localizationKey: "manga-app-title",
@@ -489,7 +489,7 @@ const WORK_LIST = [
 				isVideo: false,
 			},
 		],
-		tags: ["html-css", "cordova"],
+		tags: ["html-css", "cordova", "webview-app"],
 		title: { text: "Finger The Balloons", localizationKey: "" },
 		desc: {
 			text: "A game application developed for <strong>Android</strong> using <strong>Cordova</strong>. My main purpose for developing this application was to observe the performance of <strong>HTML5 canvas</strong> in a <strong>webview application</strong> and touch point detection accuracy.",

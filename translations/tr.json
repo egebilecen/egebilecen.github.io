@@ -59,4 +59,6 @@
 	"present-80-desc": "<strong>Python</strong> kullanılarak <strong>PRESENT-80</strong> hafif blok şifreleme algoritmasının implementasyonu.",
 	"aes-128-ecb-title": "AES-128 Şifreleme Algoritmasının ECB Modunda İmplementasyonu",
 	"aes-128-ecb-desc": "<strong>Python</strong> kullanılarak <strong>AES-128</strong> blok şifreleme algoritmasının <strong>ECB</strong> modunun implementasyonu."
+	"aes-128-ecb-desc": "<strong>Python</strong> kullanılarak <strong>AES-128</strong> blok şifreleme algoritmasının <strong>ECB</strong> modunun implementasyonu.",
+	"webview-app": "Webview Uygulaması",
 }
