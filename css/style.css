@@ -1,16 +1,13 @@
 @import url("fonts.css");
 @import url("components/toggle-button.css");
 
-* {
-    font-family: "OpenSans";
-}
-
 *:focus {
     box-shadow: none !important;
 }
 
 body {
     background-color: #18181f;
+    font-family: "Inter";
 }
 
 .loader {
