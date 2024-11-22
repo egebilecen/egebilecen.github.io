@@ -4,6 +4,7 @@ body {
 }
 
 body {
+	background: white;
     display: grid;
     width: 100%;
     font-family: Inconsolata, monospace;
