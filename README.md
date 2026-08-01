@@ -5,7 +5,7 @@
 </div>
 
 <h1 align="center">
-  My Personal Portfolio Website
+  My Personal Website
 </h1>
 
 <p align="center">
